@@ -4,16 +4,17 @@
 
 @font-face {
     font-family: 'brittani';
-        src: url('./assets/BrittanySignature-LjyZ.otf') format('opentype');
-}
-@font-face {
-    font-family: 'cinzel';
-        src: url('./assets/Cinzel-VariableFont_wght.ttf') format('truetype');
+        src: url('./webfonts/BrittanySignature-LjyZ.otf') format('opentype');
 }
 @font-face {
     font-family: 'cinzel-deco';
-        src: url('./assets/CinzelDecorative-Regular.ttf') format('truetype');
+        src: url('./webfonts/CinzelDecorative-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'cinzel';
+        src: url('./webfonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+
 
 .flex {
     display: flex;
