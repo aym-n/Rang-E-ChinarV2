@@ -352,15 +352,16 @@ html{
 }
 
 .hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
-    background: -webkit-linear-gradient(#C8A25D, #504125);
+    background: #A2834B;
     color: hsl(0, 0%, 0%);
+    border-radius: 30px;
 }
 
 /*------------------------------------------------------------
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
+    min-height: 4350px;
     width: 100%;
     padding-bottom: 120px;
     background: url("images/1.png");
@@ -648,14 +649,22 @@ html{
     padding: 15px 35px;
     border-radius: 0;
     margin-right: 20px;
-    background: -webkit-linear-gradient(#C8A25D, #504125);
+    background: #A2834B;
     font-weight: 500;
+    border-radius: 30px;
 }
 
 .see-complete-lineup .entry-footer a {
     font-size: 14px;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
+}
+
+
+.btn:hover{
+    background-color:#EBE3D6  !important;
+    color: #1E1403 !important;
+    box-shadow: 0px 0px 20px #A2834B;
 }
 
 /*------------------------------------------------------------
@@ -778,7 +787,7 @@ html{
     margin: 0;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #A2834B;
 }
 
 /*------------------------------------------------------------
@@ -846,7 +855,7 @@ html{
 .home-page-last-news-wrap .entry-content .entry-description {
     margin-top: 25px;
     font-size: 15px;
-    color: hsl(0, 0%, 60%);
+    color: #1E1403;
     line-height: 2;
 }
 
@@ -876,7 +885,7 @@ html{
 }
 
 .site-footer .footer-cover-title {
-    min-height: 480px;
+    min-height: 350px;
     width: 100%;
 }
 
