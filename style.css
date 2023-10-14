@@ -240,10 +240,6 @@ html{
         padding: 0;
     }
 
-    .site-navigation ul li:nth-last-of-type(1) {
-        padding-left: 60px;
-    }
-
     .site-navigation ul li a {
         color: #fff;
     }
@@ -265,9 +261,10 @@ html{
 }
 
 .hero-content .entry-header h2 {
-    padding: 50px;
+    padding: 20px;
     margin: 0;
     font-family: 'cinzel-deco';
+    text-align: center;
     font-size:120px;
     background: -webkit-linear-gradient(#C8A25D, #504125);
     -webkit-background-clip: text;
@@ -286,11 +283,20 @@ html{
 
 @media screen and (min-width: 992px) {
     .hero-content .entry-header h2 {
-        font-size: 172px;
+        font-size: 100px;
     }
 
     .hero-content .entry-header .entry-meta-date {
         top: 60px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .hero-content .entry-header h2 {
+        font-size: 80px;
+    }
+
+    .hero-content .entry-header .entry-meta-date {
+        top: 20px;
     }
 }
 
