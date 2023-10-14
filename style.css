@@ -261,7 +261,7 @@ body {
     margin: 0;
     font-family: 'cinzel';
     font-size:120px;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -335,7 +335,7 @@ body {
 }
 
 .hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
     color: hsl(0, 0%, 0%);
 }
 
@@ -616,7 +616,7 @@ body {
     padding: 15px 35px;
     border-radius: 0;
     margin-right: 20px;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
     font-weight: 500;
 }
 
@@ -758,7 +758,7 @@ body {
     top: 30px;
     left: 0;
     padding: 10px 25px;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
     font-size: 20px;
     font-weight: 500;
 }
@@ -1257,7 +1257,7 @@ body {
 }
 
 .tickets-page .tabs .active {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
+    background: -webkit-linear-gradient(#C8A25D, #504125) !important;
 }
 
 .tabs .tab-nav {
@@ -1271,7 +1271,7 @@ body {
 }
 
 .tabs .tab-nav:hover {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
+    background: -webkit-linear-gradient(#C8A25D, #504125) !important;
 }
 
 .tickets-page .tabs .tabs-container {
@@ -1524,7 +1524,7 @@ body {
     top: 135px;
     left: 0;
     padding: 10px 25px;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
     cursor: pointer;
 }
 
@@ -1573,7 +1573,7 @@ body {
 .blog-page .blog-list-page .load-more .btn {
     padding: 15px 35px;
     border-radius: 0;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
     font-weight: 500;
     outline: none;
 }
@@ -1712,7 +1712,7 @@ body {
     margin-right: 20px;
     border-radius: 0;
     font-weight: 600;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
 }
 
 /*------------------------------------------------------------
@@ -1752,7 +1752,7 @@ body {
 }
 
 .elements-page .elements-wrap .entry-content .gradient {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #504125);
 }
 
 .elements-page .elements-wrap .entry-content .white {
@@ -1804,7 +1804,7 @@ body {
 }
 
 .tabs ul .active {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
+    background: -webkit-linear-gradient(#C8A25D, #504125) !important;
 }
 
 .tabs ul .tab-nav {
@@ -1863,7 +1863,7 @@ body {
 }
 
 .accordion-and-tabs-wrap .accordion-wrap .active {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #C8A25D);
 }
 
 .accordion-and-tabs-wrap .accordion-wrap .entry-content {
@@ -1925,7 +1925,7 @@ body {
     font-size: 48px;
     font-weight: 500;
     line-height: 1;
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#C8A25D, #C8A25D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
