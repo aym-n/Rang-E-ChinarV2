@@ -254,7 +254,7 @@ html{
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    background: url("images/hero-image-1.jpeg") no-repeat;
+    background: url("images/hero-image-1.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -736,6 +736,8 @@ html{
 }
 
 .next-event-slider-wrap .swiper-button-next {
+
+
     top: auto;
     bottom: -21px;
     right: auto;
