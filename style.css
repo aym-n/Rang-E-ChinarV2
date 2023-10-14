@@ -361,7 +361,7 @@ html{
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
+    min-height: 4350px;
     width: 100%;
     padding-bottom: 120px;
     background: url("images/1.png");
@@ -785,7 +785,7 @@ html{
     margin: 0;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #A2834B;
 }
 
 /*------------------------------------------------------------
@@ -853,7 +853,7 @@ html{
 .home-page-last-news-wrap .entry-content .entry-description {
     margin-top: 25px;
     font-size: 15px;
-    color: hsl(0, 0%, 60%);
+    color: #1E1403;
     line-height: 2;
 }
 
@@ -883,7 +883,7 @@ html{
 }
 
 .site-footer .footer-cover-title {
-    min-height: 480px;
+    min-height: 350px;
     width: 100%;
 }
 

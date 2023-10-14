@@ -1,22 +1,29 @@
 .event_card{
-    background-color: #271F11 ;
-    background-image: url("./images/Mandala\ Flower\ Illustration.svg");
+    background: url('./images/card-bg.png') no-repeat;
+    background-size: cover;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10%;
+    padding: 12%;
     aspect-ratio: 0.9;
-    justify-content: space-around;
+    justify-content: space-between;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .event_card h1{
     color: #A2834B;
     font-weight: 600;
+    margin-top: 10%;
+}
+
+.event_card p{
+    color: rgba(255, 255, 255, 0.597);
+    margin-top: -10px;
 }
 
 .event_card h3{
-    color: rgba(255, 255, 255, 0.612);
+    color: rgba(255, 255, 255, 0.903);
     font-size: 0.97rem;
 
 }
@@ -25,6 +32,10 @@ i{
     font-size: 0.6rem;
     color: #A2834B;
     margin-right: 0.2rem;
+}
+
+.entry-title{
+    color: #A2834B !important;
 }
 
 
