@@ -1,12 +1,26 @@
 /*------------------------------------------------------------
 # Global classes
 ------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'brittani';
+        src: url('./assets/BrittanySignature-LjyZ.otf') format('opentype');
+}
+@font-face {
+    font-family: 'cinzel';
+        src: url('./assets/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cinzel-deco';
+        src: url('./assets/CinzelDecorative-Regular.ttf') format('truetype');
+}
+
 .flex {
     display: flex;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'cinzel-deco', 'cinzel';
     font-size: 15px;
     font-weight: normal;
     color: hsl(0, 0%, 90%);
@@ -245,7 +259,7 @@ body {
 .hero-content .entry-header h2 {
     padding: 50px;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'cinzel';
     font-size:120px;
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     -webkit-background-clip: text;
@@ -256,7 +270,7 @@ body {
     position: absolute;
     width: 100%;
     top: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'cinzel', 'cinzel';
     font-size: 24px;
     font-weight: 500;
     color: hsl(0, 0%, 90%);
