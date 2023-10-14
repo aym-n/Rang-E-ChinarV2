@@ -1,3 +1,18 @@
+
+@font-face {
+    font-family: 'brittani';
+        src: url('./webfonts/BrittanySignature-LjyZ.otf') format('opentype');
+}
+@font-face {
+    font-family: 'cinzel-deco';
+        src: url('./webfonts/CinzelDecorative-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cinzel';
+        src: url('./webfonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+
+
 /*------------------------------------------------------------
 # Global classes
 ------------------------------------------------------------*/
@@ -6,7 +21,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'cinzel', sans-serif;
     font-size: 15px;
     font-weight: normal;
     color: hsl(0, 0%, 90%);
@@ -17,6 +32,7 @@ body {
     src: url(fonts/beyond_the_mountains.ttf);
     src: url(fonts/beyond_the_mountains.otf);
     font-weight: 400;
+    /* hi this is the first commit */
 }
 
 .d-col-n {
@@ -245,7 +261,7 @@ body {
 .hero-content .entry-header h2 {
     padding: 50px;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'cinzel-deco';
     font-size:120px;
     background: -webkit-linear-gradient(#C8A25D, #504125);
     -webkit-background-clip: text;
@@ -256,7 +272,7 @@ body {
     position: absolute;
     width: 100%;
     top: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'cinzel', 'cinzel-deco';
     font-size: 24px;
     font-weight: 500;
     color: hsl(0, 0%, 90%);

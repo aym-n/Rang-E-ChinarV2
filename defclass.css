@@ -1,0 +1,26 @@
+.event_card{
+    background-color: #271F11 ;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+    aspect-ratio: 0.9;
+    justify-content: space-around;
+}
+
+.event_card h1{
+    color: #A2834B;
+    font-weight: 600;
+}
+
+.event_card h3{
+    color: white;
+    font-size: 0.97rem;
+}
+
+.clip_arts{
+    position: absolute;
+    width: 80%;
+    bottom: -5%;
+    right: -30%;
+}
