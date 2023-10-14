@@ -33,6 +33,10 @@ html{
     overflow-x: hidden;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: "mountains";
     src: url(fonts/beyond_the_mountains.ttf);
