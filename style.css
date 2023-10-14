@@ -269,11 +269,10 @@ body {
 }
 
 .hero-content .entry-header .entry-meta-date {
-    position: absolute;
     width: 100%;
-    top: 20px;
+    margin-bottom: 10px; 
     font-family: 'cinzel', 'cinzel-deco';
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
     color: hsl(0, 0%, 90%);
     text-align: center;
