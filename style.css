@@ -88,6 +88,7 @@ html{
     z-index: 99;
     width: 100%;
     padding: 40px 0;
+    background: linear-gradient(180deg, rgb(31, 19, 0),80%, rgba(0,0,0,0) );
 }
 
 .header-bar .site-branding {
@@ -207,10 +208,12 @@ html{
     color: #fff;
     transition: all 0.35s;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     padding-left: 40px;
 }
-
+.site-navigation ul li a:hover {
+    color: #A2834B;
+}
 @media screen and (min-width: 992px) {
     .header-bar .site-branding {
         margin-left: 35px;
@@ -254,7 +257,7 @@ html{
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    background: url("images/hero-image-1.png") no-repeat;
+    background: url("images/hero.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
