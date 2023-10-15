@@ -1475,10 +1475,11 @@ html{
 }
 
 .tickets-page .main-content .event-tickets .ticket-price {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     color: #03070c;
-    width: 50px;
+    align-self: center;
+    /* width: 50px; */
 }
 
 .tickets-page .event-tickets .number-of-tickets {

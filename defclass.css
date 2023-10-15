@@ -42,3 +42,18 @@ i{
 .row.the-complete-lineup-artists{
     justify-content: center;
 }
+
+#container , #container-d2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:is(#container,#container-d2) h1{
+    font-size: 1.05rem;
+}
+
+.day{
+    color: black;
+    font-weight: 600;
+    margin: 20px 0;
+}
