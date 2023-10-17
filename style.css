@@ -1450,11 +1450,13 @@ a.box-link *{
 .tickets-page .event-tickets .ticket-row {
     background: #f4f6f7;
     margin-bottom: 15px;
+    padding: 20px;
 }
 
 .tickets-page .event-tickets .ticket-row .ticket-type {
-    padding: 15px 24px;
+    /* padding: 15px 24px; */
     margin-right: 15px;
+    
 }
 
 .tickets-page .event-tickets .ticket-row .entry-title {
@@ -1479,7 +1481,6 @@ a.box-link *{
     font-size: 1rem;
     font-weight: 500;
     color: #03070c;
-    align-self: center;
     /* width: 50px; */
 }
 
@@ -1521,6 +1522,15 @@ a.box-link *{
     font-size: 16px;
     font-weight: 500;
     color: #ff2630;
+    text-align: left;
+    padding: 0px !important;
+}
+
+@media screen and (max-width:700px) {
+    .ticket-row{
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 /*------------------------------------------------------------
