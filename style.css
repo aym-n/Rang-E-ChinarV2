@@ -33,16 +33,11 @@ html{
     scroll-behavior: smooth;
 }
 
-html{
-    overflow-x: hidden;
-}
-
 @font-face {
     font-family: "mountains";
     src: url(fonts/beyond_the_mountains.ttf);
     src: url(fonts/beyond_the_mountains.otf);
     font-weight: 400;
-    /* hi this is the first commit */
 }
 
 .d-col-n {
@@ -693,6 +688,9 @@ html{
     color: hsl(0, 0%, 0%);
 }
 
+a.box-link *{
+    border-radius: 50%;
+}
 /*------------------------------------------------------------
 ## .next-event-slider
 ------------------------------------------------------------*/
