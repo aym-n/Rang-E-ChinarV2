@@ -347,6 +347,7 @@ html{
     margin-right: 20px;
     color: hsl(0, 0%, 17%);
     font-weight: 600;
+    margin-bottom: 18px;
 }
 
 .hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
