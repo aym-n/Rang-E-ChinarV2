@@ -980,9 +980,14 @@ a.box-link *{
 # about-us
 ------------------------------------------------------------*/
 .about-us {
-    background: url("images/about-us-background.jpg") no-repeat;
+    background: url("images/1.png");
+    background-size: 100% auto;
     width: 100%;
     height: 100%;
+}
+
+.about-us .content-wrapper{
+    background: hsl(0, 0%, 100%);
 }
 
 /*------------------------------------------------------------
