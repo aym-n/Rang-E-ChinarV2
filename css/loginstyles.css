@@ -1,0 +1,22 @@
+.form_wrapper{
+    padding: 2rem;
+}
+
+.form_wrapper label{
+    color: #A2834B;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+form button{
+    width: fit-content;
+    align-self: center;
+}
+
