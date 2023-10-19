@@ -11,33 +11,37 @@
     font-family: 'cinzel';
         src: url('./webfonts/Cinzel-VariableFont_wght.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Lora';
+        src: url('./fonts/Lora-VariableFont_wght.ttf') format('truetype');
+}
 
 
 /*------------------------------------------------------------
 # Global classes
 ------------------------------------------------------------*/
+.lora{
+    font-family: 'Lora';
+}
 .flex {
     display: flex;
 }
 
 body {
-    font-family: 'cinzel', sans-serif;
+    font-family: 'cinzel';
     font-size: 15px;
     font-weight: normal;
     overflow-x: hidden;
+}
+
+p{
+    font-family: 'lora';
 }
 
 html{
     width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
-}
-
-@font-face {
-    font-family: "mountains";
-    src: url(fonts/beyond_the_mountains.ttf);
-    src: url(fonts/beyond_the_mountains.otf);
-    font-weight: 400;
 }
 
 .d-col-n {
@@ -72,8 +76,43 @@ html{
 .site-header figure img {
     max-width: 100%;
 }
+.Sponsor_heading{
+    /* margin-left:35%; */
+    display:flex;
+    justify-content: center;
+    margin-top:6vh;
+    margin-bottom:0;
+}
+.other_sponer_img{
+margin-bottom: 20px;
+/* margin-top: 20px; */
+/* margin-left:20px ; */
+}
+.other_sponser{
+    display: flex;
+    justify-content: space-evenly;
+}
 
-/*------------------------------------------------------------
+.become_sponer{
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    height:auto;
+}
+.sponser_text{
+    max-width: 720px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#brochure_button{
+    /* text-align: center*/
+    display:flex;
+    justify-content: center;
+    /* width:20%; */
+}
+/* 
+-----------------------------------------------------------
 ## header-bar
 ------------------------------------------------------------*/
 .site-header .header-bar {
@@ -267,7 +306,7 @@ html{
     margin: 0;
     font-family: 'cinzel-deco';
     text-align: center;
-    font-size:120px;
+    font-size: 80px;
     background: -webkit-linear-gradient(#C8A25D, #504125);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -278,14 +317,14 @@ html{
     margin-bottom: 10px; 
     font-family: 'cinzel', 'cinzel-deco';
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     color: hsl(0, 0%, 90%);
     text-align: center;
 }
 
 @media screen and (min-width: 992px) {
     .hero-content .entry-header h2 {
-        font-size: 10rem;
+        font-size: 6rem;
     }
 
     .hero-content .entry-header .entry-meta-date {
@@ -294,7 +333,7 @@ html{
 }
 @media screen and (max-width: 800px) {
     .hero-content .entry-header h2 {
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .hero-content .entry-header .entry-meta-date {
@@ -328,7 +367,7 @@ html{
 .countdown-holder label {
     display: block;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 00;
     color: hsl(0, 0%, 100%);
 }
 
@@ -385,11 +424,13 @@ html{
 }
 
 .lineup-artists-headline .entry-title p {
-    margin: 0;
+    margin: 0 auto 0 auto ;
     padding: 0;
     font-size: 14px;
     font-weight: 600;
     color: hsl(0, 0%, 48%);
+    /* color: black; */
+    /* background: white; */
 }
 
 .lineup-artists-headline .entry-title h2 {
@@ -981,7 +1022,7 @@ a.box-link *{
 # about-us
 ------------------------------------------------------------*/
 .about-us {
-    background: url("images/1.png");
+    background:url("images/1.png");
     background-size: 100% auto;
     width: 100%;
     height: 100%;
@@ -1016,7 +1057,11 @@ a.box-link *{
 }
 
 .about-us .page-header {
+<<<<<<< HEAD
     background: url("images/register-title.png") no-repeat;
+=======
+    background: rgba(0,0,0,1) url("images/sponsor-header.png") no-repeat;
+>>>>>>> a6cff08df292d3c7c987862df4b717b7c923727d
     background-size: cover;
 }
 
@@ -1325,7 +1370,8 @@ a.box-link *{
 }
 
 .tabs .tab-nav:hover {
-    background: -webkit-linear-gradient(#C8A25D, #504125) !important;
+    border: 2px solid #A2834B !important;
+    color: #A2834B !important;
 }
 
 .tickets-page .tabs .tabs-container {
@@ -1647,7 +1693,8 @@ a.box-link *{
 # contact-page
 ------------------------------------------------------------*/
 .contact-page {
-    background: url("images/contact-background-image.jpg") no-repeat;
+    background: url("images/1.png");
+    background-size: 100% auto;
 }
 
 /*------------------------------------------------------------
@@ -1747,7 +1794,9 @@ a.box-link *{
 .contact-page .main-content .get-in-touch .contact-form {
     margin-top: 120px;
 }
+.title_img{
 
+}
 .contact-page .contact-form input[type="text"],
 .contact-page .contact-form input[type="email"],
 .contact-page .contact-form textarea {
@@ -1868,9 +1917,9 @@ a.box-link *{
     list-style: none;
 }
 
-.tabs ul .active {
+/* .tabs ul .active {
     background: -webkit-linear-gradient(#C8A25D, #504125) !important;
-}
+} */
 
 .tabs ul .tab-nav {
     padding: 15px 40px;
@@ -2026,7 +2075,7 @@ a.box-link *{
 
 /* register button*/
 .register {
-    border: 1px solid #A2834B;
+    border: 1px solid #A2834B !important;
     color: #A2834B;
 }
 

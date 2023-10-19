@@ -1,0 +1,21 @@
+.tabs ul .active{
+    border: 2px solid #A2834B !important;
+    color: #A2834B !important;
+}
+
+.register{
+    text-align: center;
+    border: 0px !important;
+}
+
+.desc{
+    padding: 5%;
+}
+
+.tab-content ul{
+    list-style: disc !important;
+}
+
+.lead :is(h2,h3,a){
+    font-size: 1rem;
+}
