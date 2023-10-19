@@ -73,7 +73,11 @@ html{
     max-width: 100%;
 }
 .Sponsor_heading{
-    margin-left:35%;
+    /* margin-left:35%; */
+    display:flex;
+    justify-content: center;
+    margin-top:6vh;
+    margin-bottom:0;
 }
 .other_sponer_img{
 margin-bottom: 20px;
@@ -93,26 +97,18 @@ margin-bottom: 20px;
 }
 .sponser_text{
     max-width: 720px;
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     justify-content: center;
 }
-.Brocher{
-    border: 2px solid rgb(79, 173, 250);
-    border-radius: 6px;
-    padding: 4px;
-    text-align: center;
-    position: relative;
-    left:45%;
+#brochure_button{
+    /* text-align: center*/
+    display:flex;
+    justify-content: center;
+    /* width:20%; */
 }
-.Brocher:hover{
-    background-color:rgb(79, 173, 250);
-    color: white;
-    text-decoration: none;
-   
-}
-
-/*------------------------------------------------------------
+/* 
+-----------------------------------------------------------
 ## header-bar
 ------------------------------------------------------------*/
 .site-header .header-bar {
@@ -1057,7 +1053,8 @@ a.box-link *{
 }
 
 .about-us .page-header {
-    background: url("images/about-us-header-background.jpg") no-repeat;
+    /* background: url("images/about-us-header-background.jpg") no-repeat; */
+    background: url("images/sponsor-header.png") no-repeat;
     background-size: cover;
 }
 
