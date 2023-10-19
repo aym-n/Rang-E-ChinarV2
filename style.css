@@ -2111,3 +2111,38 @@ a.box-link *{
     background: url(images/coming-soon.png) no-repeat;
     object-fit: cover !important;
 }
+
+/* sticky socials */
+.sticky-social{
+    position:fixed;
+    top: 50%;
+    Right: 0px;
+    padding:0px;
+    margin:0px;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+  .social{
+    list-style:none;
+  }
+  .social li{
+    padding:10px 10px;
+    font-size: 0.9rem;
+    transition:all 0.8s ease-in-out;
+    background-color: #A2834B;
+  }
+  .social li a i{
+    font-size: 1rem;
+    color: #EBE3D6 !important;
+    
+  }
+  .social li:hover{
+      margin-left:-30px;
+  }
+  .social li:hover .fa{
+      margin-left:20px;   
+  }
+  .fa{
+    color:#fff;
+    transition:all 0.8s ease-in-out;
+  }
