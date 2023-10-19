@@ -142,6 +142,11 @@ margin-bottom: 20px;
 /*
   Hamburger Menu
 ----------------------------------------*/
+
+.dropdown_items{
+    background-color: black;
+}
+
 .hamburger-menu {
     position: relative;
     width: 100%;
