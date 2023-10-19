@@ -1,31 +1,5 @@
 
 (function($) {
-    // 'use strict';
-    $(document).ready(function() {
-        var greetings = [
-            "नमस्ते",
-            "Hello",
-            "سلام",
-            "హలో",
-            "হ্যালো",,
-            "ನಮಸ್ಕಾರ",
-            "नमस्कार",
-            "હલો",
-            "ഹലോ"
-          ];
-        var index = 0;
-        var welcomeText = $("#welcomeText");
-  
-        function changeGreeting() {
-          welcomeText.fadeOut(500, function() {
-            welcomeText.text(greetings[index]);
-            index = (index + 1) % greetings.length;
-            welcomeText.fadeIn(500);
-          });
-        }
-  
-        setInterval(changeGreeting, 2000); // Change greeting every 2 seconds with a 1-second fade effect
-      });
     // Main Navigation
     $( '.hamburger-menu' ).on( 'click', function() {
         $(this).toggleClass('open');
