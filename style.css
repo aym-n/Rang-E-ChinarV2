@@ -72,6 +72,45 @@ html{
 .site-header figure img {
     max-width: 100%;
 }
+.Sponsor_heading{
+    margin-left:35%;
+}
+.other_sponer_img{
+margin-bottom: 20px;
+/* margin-top: 20px; */
+/* margin-left:20px ; */
+}
+.other_sponser{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.become_sponer{
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    height:auto;
+}
+.sponser_text{
+    max-width: 720px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+.Brocher{
+    border: 2px solid rgb(79, 173, 250);
+    border-radius: 6px;
+    padding: 4px;
+    text-align: center;
+    position: relative;
+    left:45%;
+}
+.Brocher:hover{
+    background-color:rgb(79, 173, 250);
+    color: white;
+    text-decoration: none;
+   
+}
 
 /*------------------------------------------------------------
 ## header-bar
@@ -385,11 +424,13 @@ html{
 }
 
 .lineup-artists-headline .entry-title p {
-    margin: 0;
+    margin: 0 auto 0 auto ;
     padding: 0;
     font-size: 14px;
     font-weight: 600;
     color: hsl(0, 0%, 48%);
+    /* color: black; */
+    /* background: white; */
 }
 
 .lineup-artists-headline .entry-title h2 {
@@ -1747,7 +1788,9 @@ a.box-link *{
 .contact-page .main-content .get-in-touch .contact-form {
     margin-top: 120px;
 }
+.title_img{
 
+}
 .contact-page .contact-form input[type="text"],
 .contact-page .contact-form input[type="email"],
 .contact-page .contact-form textarea {
