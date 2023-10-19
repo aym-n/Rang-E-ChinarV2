@@ -2083,4 +2083,15 @@ a.box-link *{
 
 
 
+/* event-category page */
+#gallery {
+    margin-top: 1%;
+}
 
+.event-body {
+    background: url(images/1.png) no-repeat;
+}
+
+.card-img-top {
+    height: 500px !important;
+}
