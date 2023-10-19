@@ -6,9 +6,29 @@
     margin: 2rem;
 }
 
-
 .text{
     background-color: #EBE3D6;
     padding:1rem 1rem 0rem 1rem;
     border-radius: 1rem;
+}
+
+.text :first-child {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:700px){
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .designation{
+        align-items: flex-start;
+        margin: 10% auto;
+    }
 }
