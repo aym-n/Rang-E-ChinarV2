@@ -2040,25 +2040,15 @@ a.box-link *{
 
 
 
-.whole {
-    height: 100%;
-    margin: 0;
+/* event-category page */
+#gallery {
+    margin-top: 1%;
 }
-.column {
-    width: 33.33%;
-    height: 100%;
-    float: left;
-  }
-  
-  .column:nth-child(1) {
-    background-color: #ff0000 !important; /* Red */
-  }
-  
-  .column:nth-child(2) {
-    background-color: #00ff00 !important; /* Green */
-  }
-  
-  .column:nth-child(3) {
-    background-color: #0000ff !important; /* Blue */
-  }
 
+.event-body {
+    background: url(images/1.png) no-repeat;
+}
+
+.card-img-top {
+    height: 500px !important;
+}
