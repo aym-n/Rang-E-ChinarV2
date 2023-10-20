@@ -1,25 +1,45 @@
 .designation{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center !important;
     color: #A2834B;
-    margin: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.designation h2{
+    font-size: large;
+    display: none;
+}
+.heading{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+.content-wrapper{
+    background-color: white;
+    padding: 2rem;
 }
 
 .text{
-    background-color: #EBE3D6;
+    /* background-color: white; */
     padding:1rem 1rem 0rem 1rem;
     border-radius: 1rem;
 }
 
 .text :first-child {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .wrapper{
     display: flex;
     gap: 20px;
+}
+
+.wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media screen and (max-width:700px){
