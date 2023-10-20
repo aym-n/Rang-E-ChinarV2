@@ -13,73 +13,130 @@
             rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
         <!-- FontAwesome CSS -->
-        <link rel="stylesheet" href="css/fontawesome-all.min.css">
-
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="css/swiper.min.css">
 
         <!-- Styles -->
         <link rel="stylesheet" href="style.css">
 
-        <link rel="stylesheet" href="./css/contactStyles.css">
+        <!-- styles defined by us -->
+        <link rel="stylesheet" href="./defclass.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <style>
+            @media (max-width: 991px) {
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    position: static;
+                    float: none;
+                    width: auto;
+                    margin-top: 0;
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                }
+        
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+                    padding: .5rem 1.5rem;
+                    color: #000;
+                }
+            }
+        </style>
     </head>
 
     <body class="contact-page">
-        <header class="site-header">
-            <div class="header-bar">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-10 col-lg-4">
-                            <h1 class="site-branding flex">
-                                <a href="index.html">Rang-e-Chinar</a>
-                            </h1>
-                        </div>
+         <header class="site-header">
+    <div class="header-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-10 col-lg-4">
+                  <a href="index.html" class="site-branding"><img src="images/rang-e-chinar logo.png" alt="" style="max-height: 100px;"></a>
+                </div>
 
-                        <div class="col-2 col-lg-8 flex">
-                            <nav class="site-navigation">
-                                <div class="hamburger-menu d-lg-none">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- .hamburger-menu -->
+                <div class="col-2 col-lg-8">
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
 
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="index.html#about">About</a></li>
-                                    <li><a href="events.html">Events</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link"
-                                            target="_blank">Institute
-                                            Registration</a></li>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="event-category.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="sponsors.html">Sponsor</a></li>
+                            <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Register
+                                </a>
+                                <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link">Institute</a>
+                                    <a class="dropdown-item" href="event-category.html">Participant</a>
+                                    <a class="dropdown-item" href="#">Attendee</a>
+                                    <!-- Add more event categories as needed -->
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="docs/rang-e-chinar general brochure.pdf" download>Brochure</a>
+                                    <a class="dropdown-item" href="#">Rulebook</a>
+                                    <!-- Add more event categories as needed -->
+                                </div>
+                            </li>
+                            <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link" target="_blank">Registration</a></li> -->
+                        </ul><!-- flex -->
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+        </div><!-- container-fluid -->
+    </div><!-- header-bar -->
+</header><!-- .site-header -->
+  <div class="sticky-social">
+    <ul class="social">
+      <li class="fb"><a href="https://www.instagram.com/rang_e_chinar/"><i class="fab fa-instagram"
+            aria-hidden="true"></i></a></li>
+      <li class="twitter"><a href="https://www.linkedin.com/company/rang-e-chinar/mycompany/"><i
+            class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+      <li class="insta"><a href="https://www.youtube.com/@Rang_e_chinar"><i class="fab fa-youtube"
+            aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
 
-                                </ul><!-- flex -->
-                            </nav><!-- .site-navigation -->
-                        </div><!-- .col-12 -->
-                    </div><!-- .row -->
-                </div><!-- container-fluid -->
-            </div><!-- header-bar -->
-        </header><!-- .site-header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="entry-header">
+            <h2 class="entry-title ">Contacts</h2>
 
-        <div class="page-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="entry-header">
-                            <h2 class="entry-title">Contacts</h2>
-
-                            <ul class="breadcrumbs flex align-items-center">
-                                <li><a href="#">Home</a></li>
-                                <li>Contact</li>
-                            </ul><!-- .breadcrumbs -->
-                        </div><!-- entry-header -->
-                    </div><!-- col-12 -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- page-header -->
+            <ul class="breadcrumbs flex align-items-center">
+              <li><a href="#">Home</a></li>
+              <li>Contacts</li>
+            </ul>
+            <!-- .breadcrumbs -->
+          </div>
+          <!-- .entry-header -->
+        </div>
+        <!-- .col-12 -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container -->
+  </div>
+  <!-- .page-header -->
 
         <div class="container flex-column mt-5 mb-5">
             <div class="management">
@@ -323,5 +380,23 @@
         <script type='text/javascript' src='js/circle-progress.min.js'></script>
         <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
         <script type='text/javascript' src='js/custom.js'></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+          AOS.init({
+            // Global settings:
+            disable: 'Phone',
+            startEvent: 'DOMContentLoaded',
+    
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease-out', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'center-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+        </script>
     </body>
 </html>

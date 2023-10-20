@@ -1083,7 +1083,7 @@ a.box-link *{
 }
 
 .about-us .page-header {
-    background: rgba(0,0,0,1) url("images/event-category.png") no-repeat;
+    background: rgba(0,0,0,1) url("images/sponsor-header.png") no-repeat;
     background-size: cover;
 }
 
@@ -1728,7 +1728,9 @@ a.box-link *{
 # site-header
 ------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url("images/contact-header-background.jpg") no-repeat;
+    background: url("images/contacts.png") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-page .main-content {
