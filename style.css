@@ -446,8 +446,9 @@ margin-bottom: 20px;
     color: hsl(0, 0%, 0%);
 }
 
-.entry-title{
-    overflow-wrap: anywhere !important;
+.entry-title {
+    width: 99% !important;
+    text-wrap: wrap;
 }
 
 /*------------------------------------------------------------
@@ -2189,4 +2190,11 @@ a.box-link *{
   .fa{
     color:#fff;
     transition:all 0.8s ease-in-out;
+  }
+
+  .each-event-register {
+    background-color: #A2834B;
+    color: #EBE3D6;
+    width: 20% !important;
+    
   }
