@@ -144,7 +144,7 @@ margin-bottom: 20px;
 ----------------------------------------*/
 
 .dropdown_items{
-    background-color: black;
+    background-color: rgba(26, 17, 1, 0.8);
 }
 
 .hamburger-menu {
@@ -152,7 +152,7 @@ margin-bottom: 20px;
     width: 100%;
     max-width: 24px;
     height: 22px;
-    margin-left: auto;
+    margin-left: auto; 
     transition: .5s ease-in-out;
     cursor: pointer;
 }
@@ -248,7 +248,8 @@ margin-bottom: 20px;
     transition: all 0.35s;
     text-decoration: none;
     font-size: 20px;
-    padding-left: 40px;
+    padding: 5px 20px;
+    text-align: center;
 }
 .site-navigation ul li a:hover {
     color: #A2834B;

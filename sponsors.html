@@ -26,44 +26,83 @@
   <!-- styles defined by us -->
   <link rel="stylesheet" href="./defclass.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+            @media (max-width: 991px) {
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    position: static;
+                    float: none;
+                    width: auto;
+                    margin-top: 0;
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                }
+        
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+                    padding: .5rem 1.5rem;
+                    color: #000;
+                }
+            }
+        </style>
 </head>
 
 <body class="about-us">
   <header class="site-header">
     <div class="header-bar">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-10 col-lg-4">
-            <h1 class="site-branding flex">
-              <a href="index.html">Rang-e-Chinar</a>
-            </h1>
-          </div>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-10 col-lg-4">
+                    <h1 class="site-branding flex">
+                        <a href="index.html"><i class="display-4 fa-brands fa-canadian-maple-leaf"></i></a>
+                    </h1>
+                </div>
 
-          <div class="col-2 col-lg-8">
-            <nav class="site-navigation">
-              <div class="hamburger-menu d-lg-none">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div><!-- .hamburger-menu -->
+                <div class="col-2 col-lg-8">
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
 
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link"
-                    target="_blank">Institute Registration</a></li>
-
-              </ul><!-- flex -->
-            </nav><!-- .site-navigation -->
-          </div><!-- .col-12 -->
-        </div><!-- .row -->
-      </div><!-- container-fluid -->
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="event-category.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="sponsors.html">Sponsor</a></li>
+                            <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Register
+                                </a>
+                                <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link">Institute</a>
+                                    <a class="dropdown-item" href="event-category.html">Participant</a>
+                                    <a class="dropdown-item" href="#">Attendee</a>
+                                    <!-- Add more event categories as needed -->
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="docs/rang-e-chinar general brochure.pdf" download>Brochure</a>
+                                    <a class="dropdown-item" href="#">Rulebook</a>
+                                    <!-- Add more event categories as needed -->
+                                </div>
+                            </li>
+                            <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link" target="_blank">Registration</a></li> -->
+                        </ul><!-- flex -->
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+        </div><!-- container-fluid -->
     </div><!-- header-bar -->
-  </header><!-- .site-header -->
+</header><!-- .site-header -->
   <div class="sticky-social">
     <ul class="social">
       <li class="fb"><a href="https://www.instagram.com/rang_e_chinar/"><i class="fab fa-instagram"
