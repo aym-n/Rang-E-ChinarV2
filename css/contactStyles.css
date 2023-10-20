@@ -9,15 +9,20 @@
 
 .designation h2{
     font-size: large;
+    display: none;
 }
 .heading{
     font-size: 2rem;
     text-align: center;
     font-weight: 600;
 }
+.content-wrapper{
+    background-color: white;
+    padding: 2rem;
+}
 
 .text{
-    background-color: white;
+    /* background-color: white; */
     padding:1rem 1rem 0rem 1rem;
     border-radius: 1rem;
 }
