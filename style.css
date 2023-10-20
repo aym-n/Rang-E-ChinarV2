@@ -446,6 +446,10 @@ margin-bottom: 20px;
     color: hsl(0, 0%, 0%);
 }
 
+.entry-title{
+    overflow-wrap: anywhere !important;
+}
+
 /*------------------------------------------------------------
 ## lineup-artists
 ------------------------------------------------------------*/
@@ -1383,7 +1387,9 @@ a.box-link *{
 }
 
 .tickets-page .tabs .active {
-    background: -webkit-linear-gradient(#C8A25D, #504125) !important;
+    border: 2px solid #A2834B !important;
+    color: #A2834B !important;
+    background-color: #fff;
 }
 
 .tabs .tab-nav {
@@ -1399,6 +1405,10 @@ a.box-link *{
 .tabs .tab-nav:hover {
     border: 2px solid #A2834B !important;
     color: #A2834B !important;
+}
+
+.tabs .tab-nav{
+    background-color: #a2834b42;
 }
 
 .tickets-page .tabs .tabs-container {
