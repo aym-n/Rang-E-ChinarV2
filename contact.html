@@ -13,17 +13,42 @@
             rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
-
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <!-- FontAwesome CSS -->
-        <link rel="stylesheet" href="css/fontawesome-all.min.css">
-
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="css/swiper.min.css">
 
         <!-- Styles -->
         <link rel="stylesheet" href="style.css">
 
+        <!-- styles defined by us -->
+        <link rel="stylesheet" href="./defclass.css">
         <link rel="stylesheet" href="./css/contactStyles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <style>
+            @media (max-width: 991px) {
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    position: static;
+                    float: none;
+                    width: auto;
+                    margin-top: 0;
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                }
+        
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+                    padding: .5rem 1.5rem;
+                    color: #000;
+                }
+            }
+        </style>
     </head>
 
     <body class="contact-page">
@@ -32,14 +57,16 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-10 col-lg-4">
-                            <h1 class="site-branding flex">
-                                <a href="index.html">Rang-e-Chinar</a>
-                            </h1>
+                            <a href="index.html" class="site-branding"><img
+                                    src="images/rang-e-chinar logo.png" alt
+                                    style="max-height: 100px;"></a>
                         </div>
 
-                        <div class="col-2 col-lg-8 flex">
+                        <div class="col-2 col-lg-8">
                             <nav class="site-navigation">
                                 <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -48,14 +75,49 @@
 
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="index.html#about">About</a></li>
-                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="event-category.html">Events</a></li>
                                     <li><a href="contact.html">Contact</a></li>
-                                    <li><a
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link"
-                                            target="_blank">Institute
-                                            Registration</a></li>
-
+                                    <li><a href="sponsors.html">Sponsor</a></li>
+                                    <li class="nav-item dropdown">
+                                        <!-- Add class 'dropdown' here -->
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Register
+                                        </a>
+                                        <div
+                                            class="dropdown-menu dropdown_items"
+                                            aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item"
+                                                href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link">Institute</a>
+                                            <a class="dropdown-item"
+                                                href="event-category.html">Participant</a>
+                                            <a class="dropdown-item" href="#">Attendee</a>
+                                            <!-- Add more event categories as needed -->
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <!-- Add class 'dropdown' here -->
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Resources
+                                        </a>
+                                        <div
+                                            class="dropdown-menu dropdown_items"
+                                            aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item"
+                                                href="docs/rang-e-chinar general brochure.pdf"
+                                                download>Brochure</a>
+                                            <a class="dropdown-item" href="#">Rulebook</a>
+                                            <!-- Add more event categories as needed -->
+                                        </div>
+                                    </li>
+                                    <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link" target="_blank">Registration</a></li> -->
                                 </ul><!-- flex -->
                             </nav><!-- .site-navigation -->
                         </div><!-- .col-12 -->
@@ -63,222 +125,314 @@
                 </div><!-- container-fluid -->
             </div><!-- header-bar -->
         </header><!-- .site-header -->
+        <div class="sticky-social">
+            <ul class="social">
+                <li class="fb"><a
+                        href="https://www.instagram.com/rang_e_chinar/"><i
+                            class="fab fa-instagram"
+                            aria-hidden="true"></i></a></li>
+                <li class="twitter"><a
+                        href="https://www.linkedin.com/company/rang-e-chinar/mycompany/"><i
+                            class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li class="insta"><a
+                        href="https://www.youtube.com/@Rang_e_chinar"><i
+                            class="fab fa-youtube"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
 
         <div class="page-header">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="entry-header">
-                            <h2 class="entry-title">Contacts</h2>
+                            <h2 class="entry-title ">Contact</h2>
 
                             <ul class="breadcrumbs flex align-items-center">
                                 <li><a href="#">Home</a></li>
                                 <li>Contact</li>
-                            </ul><!-- .breadcrumbs -->
-                        </div><!-- entry-header -->
-                    </div><!-- col-12 -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- page-header -->
+                            </ul>
 
-        <div class="container flex-column mt-5 mb-5">
-            <div class="designation">
-                <h2>Chairperson</h2>
-                <div class="text">
-                    <p> Prabh Karan Singh Jolly</p>
-                    <p> 9469303032</p>
-                    <p> prabh_2020bmec063@nitsri.ac.in</p>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Vice Chairperson</h2>
-                <div class="text">
-                    <p> Kriti Srivastav</p>
-                    <p> 8175918806</p>
-                    <p> kriti.2020bele028@nitsri.ac.in</p>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Secretary</h2>
-                <div class="text">
-                    <p> Hari Om</p>
-                    <p> 7870597460</p>
-                    <p> hariom_2020bciv180@nitsri.ac.in</p>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Treasurer</h2>
-                <div class="text">
-                    <p> Owais Lateef Pandit</p>
-                    <p> 7006288566</p>
-                    <p> owaislateef_2022mmba003@nitsri.ac.in</p>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Technical Head</h2>
-                <div class="text">
-                    <p> Gurudayal Gupta</p>
-                    <p> 9541887038</p>
-                    <p> gupta_2022bche007@nitsri.ac.in</p>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Head of Curation</h2>
-                <div class="text">
-                    <p> Prabh Karan Singh Jolly</p>
-                    <p> 9469303032</p>
-                    <p> prabh_2020bmec063@nitsri.ac.in</p>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Head of Singing event (vocal)</h2><div class="text">
-                    <p> Aditya Shreshth</p>
-                    <p> 8082525295</p>
-                    <p> [Not Available]</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of Creativity</h2><div class="text">
-                    <p> Hurmat Khalid</p>
-                    <p> 8082251200</p>
-                    <p> hurmat_2021bcse020@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of Singing event (Instrumental)</h2><div class="text">
-                    <p> Siddhant Raghav</p>
-                    <p> 7599741707</p>
-                    <p> 2023nitsgr758@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of Workshop</h2>
-                <div class="wrapper">
-                    <div class="text">
-                        <p> Ayush Singh</p>
-                        <p> 8957026806</p>
-                        <p> [Not Available]</p>
+                            <!-- .breadcrumbs -->
+                        </div>
+                        <!-- .entry-header -->
                     </div>
-                    <div class="text">
-                        <p> Janvi</p>
-                        <p> 9699408586</p>
-                        <p> janhvi_2022bmec075@nitsri.ac.in</p>
+                    <!-- .col-12 -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .page-header -->
+
+        <div class="container contact_div flex-column mt-5 mb-5">
+            <div class="content-wrapper">
+
+                <div class="management">
+                    <div class="heading">Management</div>
+                    <div class="wrapper">
+                        <div class="designation">
+                            <h2>Chairperson</h2>
+                            <div class="text">
+                                <p> Prabh Karan Singh Jolly</p>
+                                <p> 9469303032</p>
+                                <p>
+                                    prabh_2020bmec063@nitsri.ac.in</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Vice Chairperson</h2>
+                            <div class="text">
+                                <p> Kriti Srivastav</p>
+                                <p> 8175918806</p>
+                                <p>
+                                    kriti.2020bele028@nitsri.ac.in</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Secretary</h2>
+                            <div class="text">
+                                <p> Hari Om</p>
+                                <p> 7870597460</p>
+                                <p>
+                                    hariom_2020bciv180@nitsri.ac.in</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Treasurer</h2>
+                            <div class="text">
+                                <p> Owais Lateef Pandit</p>
+                                <p> 7006288566</p>
+                                <p>
+                                    owaislateef_2022mmba003@nitsri.ac.in</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="designation">
-                <h2>Head of Drama, Monoact and standup</h2>
-                <div class="wrapper">
-                    <div class="text">
-                        <p> Manjeet Kumar</p>
-                        <p> 6005336839</p>
-                        <p> manjeet_2021bele002@nitsri.ac.in</p>
+                <div class="tech_team">
+                    <div class="heading">Techincal Leads</div>
+                    <div class="wrapper">
+                        <div class="designation">
+                            <h2>Technical Head</h2>
+                            <div class="text">
+                                <p> Gurudayal Gupta</p>
+                                <p> 9541887038</p>
+                                <p>
+                                    gupta_2022bche007@nitsri.ac.in</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of Curation</h2>
+                            <div class="text">
+                                <p> Prabh Karan Singh Jolly</p>
+                                <p> 9469303032</p>
+                                <p>
+                                    prabh_2020bmec063@nitsri.ac.in</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of web Development team</h2><div
+                                class="text">
+                                <p> Ayman Makroo</p>
+                                <p> 7006456359</p>
+                                <p>
+                                    ayman_2022bcse004@nitsri.ac.in</p>
+                            </div>
+                        </div>
+                        <div class="designation">
+                            <h2>Head of Design, social media and
+                                Content team</h2>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p> MD Saif</p>
+                                    <p> 9308073143</p>
+                                    <p>
+                                        md_2021bece046@nitsri.ac.in</p>
+                                </div>
+                                <div class="text">
+                                    <p> Aanan Kataria</p>
+                                    <p> 8149091642</p>
+                                    <p>
+                                        aanan_2020bcse072@nitsri.ac.in</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="designation">
+                            <h2>Head of Creativity</h2><div
+                                class="text">
+                                <p> Hurmat Khalid</p>
+                                <p> 8082251200</p>
+                                <p>
+                                    hurmat_2021bcse020@nitsri.ac.in</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p> Adil Nabi</p>
-                        <p> 7006587728</p>
-                        <p> [Not Available]</p>
+                </div>
+
+                <div class="sponsors">
+                    <div class="heading">Sponsorship and PR</div>
+                    <div class="wrapper">
+                        <div class="designation">
+                            <h2>Head of Purchasing</h2><div
+                                class="text">
+                                <p> Kamran Elyas</p>
+                                <p> 6006302354</p>
+                                <p>
+                                    kamran_2020bmme086@nitsri.ac.
+                                    in</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of sponsorship and Research</h2><div
+                                class="text">
+                                <p> Aijaz Maqbool</p>
+                                <p> 7006120573</p>
+                                <p> aijaz_28btech20@nitsri.ac.in</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="publicity">
+                    <div class="heading">Publicity and
+                        Hospitality</div>
+                    <div class="wrapper">
+                        <div class="designation">
+                            <h2>Head of outreach</h2><div
+                                class="text">
+                                <p> Mohammad Ibrahim Salaria</p>
+                                <p> 9622827020</p>
+                                <p>
+                                    ibrahim_2021bciv005@nitsri.ac.in</p>
+                            </div>
+                        </div>
+                        <div class="designation">
+                            <h2>Ground level work head</h2>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p> Atul Kumar Gupta</p>
+                                    <p> 9541118163</p>
+                                    <p>
+                                        atul_2020bmec076@nitsri.net</p>
+                                </div>
+                                <div class="text">
+                                    <p> Rishav Kumar</p>
+                                    <p> 7667010956</p>
+                                    <p> [Not Available]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="event_leads">
+                    <div class="heading">Event Leads</div>
+                    <div class="wrapper">
+
+                        <div class="designation">
+                            <h2>Head of Singing event (vocal)</h2>
+                            <div class="text">
+                                <p> Aditya Shreshth</p>
+                                <p> 8082525295</p>
+                                <p> [Not Available]</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of Singing event
+                                (Instrumental)</h2>
+                            <div class="text">
+                                <p> Siddhant Raghav</p>
+                                <p> 7599741707</p>
+                                <p> 2023nitsgr758@nitsri.ac.in</p>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of Workshop</h2>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p> Ayush Singh</p>
+                                    <p> 8957026806</p>
+                                    <p> [Not Available]</p>
+                                </div>
+                                <div class="text">
+                                    <p> Janvi</p>
+                                    <p> 9699408586</p>
+                                    <p>
+                                        janhvi_2022bmec075@nitsri.ac.in</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of Drama, Monoact and
+                                standup</h2>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p> Manjeet Kumar</p>
+                                    <p> 6005336839</p>
+                                    <p>
+                                        manjeet_2021bele002@nitsri.ac.in</p>
+                                </div>
+                                <div class="text">
+                                    <p> Adil Nabi</p>
+                                    <p> 7006587728</p>
+                                    <p> [Not Available]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of Game zone</h2><div
+                                class="text">
+                                <p> Dhairyashil Hasbe</p>
+                                <p> 9325363505</p>
+                                <p>
+                                    dhairyashil_2020bmec031@nitsri.ac.in</p>
+                            </div> </div>
+
+                        <div class="designation">
+                            <h2>Head of Painting</h2>
+                            <div class="wrapper">
+                                <div class="text">
+                                    <p> Vagisha Vag</p>
+                                    <p> 6205821730</p>
+                                    <p>
+                                        vagisha_2021bciv098@nitsri.ac.in</p>
+                                </div>
+                                <div class="text">
+                                    <p> Vikash Kumar</p>
+                                    <p> 7318565386</p>
+                                    <p>
+                                        vikas_2021bciv084@nitsri.ac.in</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="designation">
+                            <h2>Head of photography, reels and
+                                theatrics</h2><div
+                                class="text">
+                                <p> Dhairyashil Hasbe</p>
+                                <p> 9325363505</p>
+                                <p>
+                                    dhairyashil_2020bmec031@nitsri.ac.in</p>
+                            </div> </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="designation">
-                <h2>Head of Purchasing</h2><div class="text">
-                    <p> Kamran Elyas</p>
-                    <p> 6006302354</p>
-                    <p> kamran_2020bmme086@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of web Development team</h2><div class="text">
-                    <p> Ayman Makroo</p>
-                    <p> 7006456359</p>
-                    <p> ayman_2022bcse004@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of Game zone</h2><div class="text">
-                    <p> Dhairyashil Hasbe</p>
-                    <p> 9325363505</p>
-                    <p> dhairyashil_2020bmec031@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of Painting</h2>
-                <div class="wrapper">
-                    <div class="text">
-                        <p> Vagisha Vag</p>
-                        <p> 6205821730</p>
-                        <p> vagisha_2021bciv098@nitsri.ac.in</p>
-                    </div>
-                    <div class="text">
-                        <p> Vikash Kumar</p>
-                        <p> 7318565386</p>
-                        <p> vikas_2021bciv084@nitsri.ac.in</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Head of outreach</h2><div class="text">
-                    <p> Mohammad Ibrahim Salaria</p>
-                    <p> 9622827020</p>
-                    <p> ibrahim_2021bciv005@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of photography, reels and theatrics</h2><div
-                    class="text">
-                    <p> Dhairyashil Hasbe</p>
-                    <p> 9325363505</p>
-                    <p> dhairyashil_2020bmec031@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of sponsorship and Research</h2><div class="text">
-                    <p> Aijaz Maqbool</p>
-                    <p> 7006120573</p>
-                    <p> aijaz_28btech20@nitsri.ac.in</p>
-                </div> </div>
-
-            <div class="designation">
-                <h2>Head of Design, social media and Content team</h2>
-                <div class="wrapper">
-                    <div class="text">
-                        <p> MD Saif</p>
-                        <p> 9308073143</p>
-                        <p> md_2021bece046@nitsri.ac.in</p>
-                    </div>
-                    <div class="text">
-                        <p> Aanan Kataria</p>
-                        <p> 8149091642</p>
-                        <p> aanan_2020bcse072@nitsri.ac.in</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="designation">
-                <h2>Ground level work head</h2>
-                <div class="wrapper">
-                    <div class="text">
-                        <p> Atul Kumar Gupta</p>
-                        <p> 9541118163</p>
-                        <p> atul_2020bmec076@nitsri.net</p>
-                    </div>
-                    <div class="text">
-                        <p> Rishav Kumar</p>
-                        <p> 7667010956</p>
-                        <p> [Not Available]</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <footer class="site-footer">
@@ -296,15 +450,22 @@
                             </div><!-- entry-title -->
 
                             <div class="entry-mail">
-                                <a href="mailto:rangechinar@nitsri.ac.in">RangEChinar@nitsri.ac.in</a>
+                                <a
+                                    href="mailto:rangechinar@nitsri.ac.in">RangEChinar@nitsri.ac.in</a>
                             </div><!-- .entry-mail -->
 
                             <div class="footer-social">
                                 <ul
                                     class="flex justify-content-center align-items-center">
-                                    <li><a href="https://www.instagram.com/rang_e_chinar/"><i class="fab fa-instagram fa-2x"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@Rang_e_chinar"><i class="fab fa-youtube fa-2x"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/rang-e-chinar/mycompany/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                                    <li><a
+                                            href="https://www.instagram.com/rang_e_chinar/"><i
+                                                class="fab fa-instagram fa-2x"></i></a></li>
+                                    <li><a
+                                            href="https://www.youtube.com/@Rang_e_chinar"><i
+                                                class="fab fa-youtube fa-2x"></i></a></li>
+                                    <li><a
+                                            href="https://www.linkedin.com/company/rang-e-chinar/mycompany/"><i
+                                                class="fab fa-linkedin-in fa-2x"></i></a></li>
                                 </ul>
                             </div><!-- footer-social -->
                         </div><!-- col -->
@@ -314,12 +475,38 @@
         </footer><!-- site-footer -->
 
         <script type='text/javascript' src='js/jquery.js'></script>
-        <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-        <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+        <script type='text/javascript'
+            src='js/masonry.pkgd.min.js'></script>
+        <script type='text/javascript'
+            src='js/jquery.collapsible.min.js'></script>
         <script type='text/javascript' src='js/swiper.min.js'></script>
-        <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-        <script type='text/javascript' src='js/circle-progress.min.js'></script>
-        <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+        <script type='text/javascript'
+            src='js/jquery.countdown.min.js'></script>
+        <script type='text/javascript'
+            src='js/circle-progress.min.js'></script>
+        <script type='text/javascript'
+            src='js/jquery.countTo.min.js'></script>
         <script type='text/javascript' src='js/custom.js'></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+          AOS.init({
+            // Global settings:
+            disable: 'Phone',
+            startEvent: 'DOMContentLoaded',
+    
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease-out', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'center-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+        </script>
     </body>
 </html>
