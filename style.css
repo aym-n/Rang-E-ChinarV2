@@ -2191,3 +2191,10 @@ a.box-link *{
     color:#fff;
     transition:all 0.8s ease-in-out;
   }
+
+  .each-event-register {
+    background-color: #A2834B;
+    color: #EBE3D6;
+    width: 20% !important;
+    
+  }
