@@ -6,11 +6,12 @@
     margin: 1rem;
     text-align: center;
 }
-
+/* hide the head text */
 .designation h2{
     font-size: large;
-    display: none;
+    /* display: none; */
 }
+
 .heading{
     font-size: 2rem;
     text-align: center;
@@ -22,7 +23,6 @@
 }
 
 .text{
-    /* background-color: white; */
     padding:1rem 1rem 0rem 1rem;
     border-radius: 1rem;
 }

@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Hello World!</title>
+    <title>Hello World!</title>
 
-        <link
+    <link
             href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
             rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-        <!-- FontAwesome CSS -->
         <!-- FontAwesome CSS -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="css/swiper.min.css">
 
         <!-- Styles -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/card_styles.css">
 
-        <!-- defined class -->
+        <!-- styles defined by us -->
         <link rel="stylesheet" href="./defclass.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <style>
+            @media (max-width: 991px) {
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    position: static;
+                    float: none;
+                    width: auto;
+                    margin-top: 0;
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                }
+        
+                .navbar-expand-lg .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+                    padding: .5rem 1.5rem;
+                    color: #000;
+                }
+            }
+        </style>
+    <style>
 
             a.box-link{
                 position: absolute;
@@ -48,395 +68,463 @@
                 }
             }
         </style>
-    </head>
+  </head>
 
-    <body class="tickets-page">
-        <header class="site-header">
-            <div class="header-bar">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-10 col-lg-4">
-                            <h1 class="site-branding flex">
-                                <a href="#">Rang E Chinar</a>
-                            </h1>
-                        </div>
+  <body class="tickets-page">
+    <header class="site-header">
+      <div class="header-bar">
+          <div class="container-fluid">
+              <div class="row align-items-center">
+                  <div class="col-10 col-lg-4">
+                          <a href="index.html" class="site-branding"><img src="images/rang-e-chinar logo.png" alt="" style="max-height: 125px;"></a>
+                  </div>
 
-                        <div class="col-2 col-lg-8">
-                            <nav class="site-navigation">
-                                <div class="hamburger-menu d-lg-none">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- .hamburger-menu -->
+                  <div class="col-2 col-lg-8">
+                      <nav class="site-navigation">
+                          <div class="hamburger-menu d-lg-none">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </div><!-- .hamburger-menu -->
 
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Events</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#"><i class="fas fa-search"></i></a></li>
-                                </ul><!-- flex -->
-                            </nav><!-- .site-navigation -->
-                        </div><!-- .col-12 -->
-                    </div><!-- .row -->
-                </div><!-- container-fluid -->
-            </div><!-- header-bar -->
-        </header><!-- .site-header -->
+                          <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="event-category.html">Events</a></li>
+                              <li><a href="sponsors.html">Sponsor</a></li>
+                              <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Register
+                                  </a>
+                                  <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="#">Attendee</a>
+                                      <a class="dropdown-item" href="event-category.html">Participant</a>
+                                      <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link">Institute</a>
+                                      <!-- Add more event categories as needed -->
+                                  </div>
+                              </li>
+                              <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Resources
+                                  </a>
+                                  <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
 
-        <div class="page-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="entry-header">
-                            <h2 class="entry-title">Buy tickets</h2>
+                                      <a class="dropdown-item" href="events.html">Schedule</a>
+                                      <a class="dropdown-item" href="docs/rang-e-chinar general brochure.pdf" download>Brochure</a>
+                                      <a class="dropdown-item" href="#">Rulebook</a>
+                                      <!-- Add more event categories as needed -->
+                                  </div>
+                              </li>
+                              <li><a href="contact.html">Contact</a></li>
+                              <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link" target="_blank">Registration</a></li> -->
+                          </ul><!-- flex -->
+                      </nav><!-- .site-navigation -->
+                  </div><!-- .col-12 -->
+              </div><!-- .row -->
+          </div><!-- container-fluid -->
+      </div><!-- header-bar -->
+  </header><!-- .site-header -->
 
-                            <ul class="breadcrumbs flex align-items-center">
-                                <li><a href="#">Home</a></li>
-                                <li>Buy tickets</li>
-                            </ul><!-- .breadcrumbs -->
-                        </div><!-- entry-header -->
-                    </div><!-- col-12 -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- page-header -->
+    <div class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="entry-header">
+              <h2 class="entry-title">Buy tickets</h2>
 
-        <div class="main-content">
-            <div class="container">
-                <div class="entry-header">
-                    <div class="entry-title">
-                        <p>Explore</p>
-                        <h2>Some More Events</h2>
-                    </div><!-- entry-title -->
-                </div><!-- entry-header -->
+              <ul class="breadcrumbs flex align-items-center">
+                <li><a href="#">Home</a></li>
+                <li>Buy tickets</li>
+              </ul><!-- .breadcrumbs -->
+            </div><!-- entry-header -->
+          </div><!-- col-12 -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- page-header -->
 
-                <div class="row">
-                    <div class="col-12">
-                        <div class="tabs">
-                            <div class="tabs-container">
-                                <div id="tab_details" class="tab-content">
-                                    <div
-                                        class="flex flex-wrap justify-content-between">
-                                        <div class="single-event-details">
-                                            <div
-                                                class="single-event-details-row">
-                                                <label>Start:</label>
-                                                <p>Nov 3 @ 08:00 am</p>
-                                            </div>
+    <div class="main-content">
+      <div class="container">
+        <div class="entry-header">
+          <div class="entry-title">
+            <p>Explore</p>
+            <h2>Some More Events</h2>
+          </div><!-- entry-title -->
+        </div><!-- entry-header -->
 
-                                            <div
-                                                class="single-event-details-row">
-                                                <label>End:</label>
-                                                <p>Nov 4 @ 08:30 pm</p>
-                                            </div>
-                                            <div
-                                                class="single-event-details-row">
-                                                <label>Categories:</label>
-                                                <p>Festivals</p>
-                                            </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="tabs">
+              <div class="tabs-container">
+                <div id="tab_details" class="tab-content">
+                  <div
+                    class="flex flex-wrap justify-content-between">
+                    <div class="single-event-details">
+                      <div
+                        class="single-event-details-row">
+                        <label>Start:</label>
+                        <p>Nov 3 @ 08:00 am</p>
+                      </div>
 
-                                            <div
-                                                class="single-event-details-row">
-                                                <label>Tags:</label>
-                                                <p><a href="#">festivals</a>, <a
-                                                        href="#">music</a>, <a
-                                                        href="#">concert</a></p>
-                                            </div>
-                                        </div>
+                      <div
+                        class="single-event-details-row">
+                        <label>End:</label>
+                        <p>Nov 4 @ 08:30 pm</p>
+                      </div>
+                      <div
+                        class="single-event-details-row">
+                        <label>Categories:</label>
+                        <p>Festivals</p>
+                      </div>
 
-                                        <div class="single-event-map">
-                                            <iframe
-                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7852.087597613934!2d74.84287477882916!3d34.12300937093046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e185afae42b685%3A0xdf5ec84b1ac8f98d!2sNational%20Institute%20of%20Technology%20(NIT)%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1697353698665!5m2!1sen!2sin"
-                                                width="600" height="450"
-                                                style="border:0;"
-                                                allowfullscreen loading="lazy"
-                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
-                                    </div>
-                                </div><!-- .tab-content -->
+                      <div
+                        class="single-event-details-row">
+                        <label>Tags:</label>
+                        <p><a href="#">festivals</a>, <a
+                            href="#">music</a>, <a
+                            href="#">concert</a></p>
+                      </div>
+                    </div>
 
-                            </div><!-- .tabs-container -->
-                        </div><!-- .tabs -->
-                    </div><!-- .col-12 -->
-                </div><!-- .row -->
+                    <div class="single-event-map">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7852.087597613934!2d74.84287477882916!3d34.12300937093046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e185afae42b685%3A0xdf5ec84b1ac8f98d!2sNational%20Institute%20of%20Technology%20(NIT)%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1697353698665!5m2!1sen!2sin"
+                        width="600" height="450"
+                        style="border:0;"
+                        allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div><!-- .tab-content -->
 
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="day">Day - 1</h2>
-                        <div class="event-tickets" id="container">
-                            <!-- day 1 -->
-                        </div><!-- event-tickets -->
-                        <h2 class="day">Day - 2</h2>
-                        <div class="event-tickets" id="container-d2">
-                                <!-- day 2 -->
-                        </div><!-- event-tickets -->
-                    </div><!-- col-12 -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- main-content -->
+              </div><!-- .tabs-container -->
+            </div><!-- .tabs -->
+          </div><!-- .col-12 -->
+        </div><!-- .row -->
 
-        <footer class="site-footer">
-            <div
-                class="footer-cover-title flex justify-content-center align-items-center">
-                <h2>Rang-e-Chinar</h2>
-            </div><!-- .site-footer -->
+        <div class="row">
+          <div class="col-12" d>
+            <h2 class="day">Day - 1</h2>
+            <div class="event-tickets flex-row" id="container">
+              <!-- day 1 -->
+            </div><!-- event-tickets -->
+            <h2 class="day">Day - 2</h2>
+            <div class="event-tickets flex-row" id="container-d2">
+              <!-- day 2 -->
+            </div><!-- event-tickets -->
+          </div><!-- col-12 -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- main-content -->
 
-            <div class="footer-content-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="entry-title">
-                                <a href="#">Rang-e-Chinar</a>
-                            </div><!-- entry-title -->
+    <footer class="site-footer">
+      <div
+        class="footer-cover-title flex justify-content-center align-items-center">
+        <h2>Rang-e-Chinar</h2>
+      </div><!-- .site-footer -->
 
-                            <div class="entry-mail">
-                                <a href="#">RangEChinar@nitsri.ac.in</a>
-                            </div><!-- .entry-mail -->
+      <div class="footer-content-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="entry-title">
+                <a href="#">Rang-e-Chinar</a>
+              </div><!-- entry-title -->
 
-                            <div class="footer-social">
-                                <ul
-                                    class="flex justify-content-center align-items-center">
-                                    <li><a href="#"><i
-                                                class="fab fa-pinterest fa-2x"></i></a></li>
-                                    <li><a href="#"><i
-                                                class="fab fa-facebook-f fa-2x"></i></a></li>
-                                    <li><a href="#"><i
-                                                class="fab fa-twitter fa-2x"></i></a></li>
-                                    <li><a href="#"><i
-                                                class="fab fa-dribbble fa-2x"></i></a></li>
-                                    <li><a href="#"><i
-                                                class="fab fa-behance fa-2x"></i></a></li>
-                                    <li><a href="#"><i
-                                                class="fab fa-linkedin-in fa-2x"></i></a></li>
-                                </ul>
-                            </div><!-- footer-social -->
-                        </div><!-- col -->
-                    </div><!-- row -->
-                </div><!-- container -->
-            </div><!-- footer-content-wrapper -->
-        </footer><!-- site-footer -->
+              <div class="entry-mail">
+                <a href="#">RangEChinar@nitsri.ac.in</a>
+              </div><!-- .entry-mail -->
 
-        <script>
+              <div class="footer-social">
+                <ul
+                  class="flex justify-content-center align-items-center">
+                  <li><a href="#"><i
+                        class="fab fa-pinterest fa-2x"></i></a></li>
+                  <li><a href="#"><i
+                        class="fab fa-facebook-f fa-2x"></i></a></li>
+                  <li><a href="#"><i
+                        class="fab fa-twitter fa-2x"></i></a></li>
+                  <li><a href="#"><i
+                        class="fab fa-dribbble fa-2x"></i></a></li>
+                  <li><a href="#"><i
+                        class="fab fa-behance fa-2x"></i></a></li>
+                  <li><a href="#"><i
+                        class="fab fa-linkedin-in fa-2x"></i></a></li>
+                </ul>
+              </div><!-- footer-social -->
+            </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </div><!-- footer-content-wrapper -->
+    </footer><!-- site-footer -->
+
+    <script>
             var eventsd1 = [
-              {
-                event: "Live Photography",
-                time: "8:00 am - 8:00 pm",
-                venue: "Campus",
-              },
-              {
-                event: "30 Sec Reels Making Competition",
-                time: "8:00 am – 8:00 pm",
-                venue: "Campus",
-              },
-              {
-                event: "Solo Song Eastern",
-                time: "2:00 pm",
-                venue: "Common Hall",
-              },
-              {
-                event: "Solo Dance Western",
-                time: "11:00 am",
-                venue: "Common Hall",
-              },
-              {
-                event: "Wall Painting (Theme- Beautiful Kashmir)",
-                time: "9:00 am",
-                venue: "Compound Wall",
-              },
-              {
-                event: "Standup Comedy",
-                time: "9:30 am",
-                venue: "Common Hall",
-              },
-              {
-                event: "Solo Regional Instrumental",
-                time: "9:00 am to 12:00 pm",
-                venue: "Open Mic Stage",
-              },
-              {
-                event: "Face Painting / Stone Painting",
-                time: "9:00 am",
-                venue: "Hi Tech",
-              },
-              {
-                event: "Mushaira/ Shayari",
-                time: "12:00 pm",
-                venue: "Hi Tech",
-              },
-              {
-                event: "Theatrics",
-                time: "11:00 am to 1:00 pm",
-                venue: "PF",
-              },
-              {
-                event: "The Trained Cuisine (North)",
-                time: "9:00 am to 11:00 am",
-                venue: "LH",
-              },
-              {
-                event: "Paper Mache Studio",
-                time: "11:00 am to 1:00 am",
-                venue: "LH",
-              },
-              {
-                event: "Duet Song",
-                time: "3:00 pm",
-                venue: "Open Mic Stage",
-              },
-              {
-                event: "Rap",
-                time: "4:00 pm",
-                venue: "Open Mic Stage",
-              },
-              {
-                event: "Monoacting",
-                time: "3:00 pm",
-                venue: "Hi Tech",
-              },
-              {
-                event: "Logo Designing",
-                time: "4:00 pm",
-                venue: "LH",
-              },
-              {
-                event: "Willow Wicker Studio",
-                time: "2:00 pm to 4:00 pm",
-                venue: "LH",
-              },
-              {
-                event: "Portrait Sketching",
-                time: "2:00 pm",
-                venue: "Drawing Hall",
-              },
-              {
-                event: "Clay Art",
-                time: "2:00 pm",
-                venue: "Drawing Hall",
-              },
-              {
-                event: "Gaming Zone",
-                time: "9:00 am to 5:00 pm",
-                venue: "PF",
-              },
-              {
-                event: "Dance battle",
-                time: "3:30 pm",
-                venue: "Common Hall",
-              },
-              {
-                event: "Duet Free Style Dance",
-                time: "4:30 pm to 6:00 pm",
-                venue: "Main Stage",
-              },
-              {
-                event: "Battle Of Bands",
-                time: "6:00 pm to 8:30 pm",
-                venue: "Main Stage",
-              },
-            ];
+  {
+    event: "Live Photography",
+    time: "8:00 am - 8:00 pm",
+    venue: "Campus",
+    image: "live-photography.jpg"
+  },
+  {
+    event: "30 Sec Reels Making Competition",
+    time: "8:00 am – 8:00 pm",
+    venue: "Campus",
+    image: "30-sec-reels-making-competition.jpg"
+  },
+  {
+    event: "Solo Song Eastern",
+    time: "2:00 pm",
+    venue: "Common Hall",
+    image: "solo-song-eastern.jpg"
+  },
+  {
+    event: "Solo Dance Western",
+    time: "11:00 am",
+    venue: "Common Hall",
+    image: "solo-dance-western.jpg"
+  },
+  {
+    event: "Wall Painting (Theme- Beautiful Kashmir)",
+    time: "9:00 am",
+    venue: "Compound Wall",
+    image: "wall-painting.jpg"
+  },
+  {
+    event: "Standup Comedy",
+    time: "9:30 am",
+    venue: "Common Hall",
+    image: "standup-comedy.jpg"
+  },
+  {
+    event: "Solo Regional Instrumental",
+    time: "9:00 am to 12:00 pm",
+    venue: "Open Mic Stage",
+    image: "solo-regional-instrumental.jpg"
+  },
+  {
+    event: "Face Painting / Stone Painting",
+    time: "9:00 am",
+    venue: "Hi Tech",
+    image: "face-painting.jpg"
+  },
+  {
+    event: "Mushaira/ Shayari",
+    time: "12:00 pm",
+    venue: "Hi Tech",
+    image: "mushaira-shayari.jpg"
+  },
+  {
+    event: "Theatrics",
+    time: "11:00 am to 1:00 pm",
+    venue: "PF",
+    image: "theatrics.jpg"
+  },
+  {
+    event: "The Trained Cuisine (North)",
+    time: "9:00 am to 11:00 am",
+    venue: "LH",
+    image: "trained-cuisine.jpg"
+  },
+  {
+    event: "Paper Mache Studio",
+    time: "11:00 am to 1:00 am",
+    venue: "LH",
+    image: "paper-mache-studio.jpg"
+  },
+  {
+    event: "Duet Song",
+    time: "3:00 pm",
+    venue: "Open Mic Stage",
+    image: "duet-song.jpg"
+  },
+  {
+    event: "Rap",
+    time: "4:00 pm",
+    venue: "Open Mic Stage",
+    image: "rap.jpg"
+  },
+  {
+    event: "Monoacting",
+    time: "3:00 pm",
+    venue: "Hi Tech",
+    image: "monoacting.jpg"
+  },
+  {
+    event: "Logo Designing",
+    time: "4:00 pm",
+    venue: "LH",
+    image: "logo-designing.jpg"
+  },
+  {
+    event: "Willow Wicker Studio",
+    time: "2:00 pm to 4:00 pm",
+    venue: "LH",
+    image: "willow-wicker-studio.jpg"
+  },
+  {
+    event: "Portrait Sketching",
+    time: "2:00 pm",
+    venue: "Drawing Hall",
+    image: "portrait-sketching.jpg"
+  },
+  {
+    event: "Clay Art",
+    time: "2:00 pm",
+    venue: "Drawing Hall",
+    image: "clay-art.jpg"
+  },
+  {
+    event: "Gaming Zone",
+    time: "9:00 am to 5:00 pm",
+    venue: "PF",
+    image: "gaming-zone.jpg"
+  },
+  {
+    event: "Dance battle",
+    time: "3:30 pm",
+    venue: "Common Hall",
+    image: "dance-battle.jpg"
+  },
+  {
+    event: "Duet Free Style Dance",
+    time: "4:30 pm to 6:00 pm",
+    venue: "Main Stage",
+    image: "duet-freestyle-dance.jpg"
+  },
+  {
+    event: "Battle Of Bands",
+    time: "6:00 pm to 8:30 pm",
+    venue: "Main Stage",
+    image: "battle-of-bands.jpg"
+  }
+];
+
               // Assuming 'data' contains your JSON data
-            var eventsd2 = [
-              {
-                "event": "Live Photography",
-                "time": "8.00 am - 8.00 pm",
-                "venue": "Campus"
-              },
-              {
-                "event": "30 Sec Reels Making Competition",
-                "time": "8.00 am – 8.00 pm",
-                "venue": "Campus"
-              },
-              {
-                "event": "Wall Painting (Theme- Beautiful Kashmir)",
-                "time": "9.00 am",
-                "venue": "Compound Wall"
-              },
-              {
-                "event": "Solo Dance Eastern",
-                "time": "9.00 am",
-                "venue": "Common Hall"
-              },
-              {
-                "event": "Solo Song Western",
-                "time": "9.30 am",
-                "venue": "Open Stage"
-              },
-              {
-                "event": "Origami Studio",
-                "time": "10.00 am to 11.30 am",
-                "venue": "LH"
-              },
-              {
-                "event": "The Trained Cuisine (South)",
-                "time": "11.30 am to 1.00 pm",
-                "venue": "LH"
-              },
-              {
-                "event": "Mimicry",
-                "time": "10.00 am",
-                "venue": "Open Mic Stage"
-              },
-              {
-                "event": "Game Zone",
-                "time": "10.00 am to 5.00 pm",
-                "venue": "PF"
-              },
-              {
-                "event": "Tattoo Making Studio",
-                "time": "3.30 pm to 5.00 pm",
-                "venue": "Drawing Hall"
-              },
-              {
-                "event": "India Land of Unity in Diversity (Culture Show)",
-                "time": "2.00 pm",
-                "venue": "Common Hall"
-              },
-              {
-                "event": "BeatBox",
-                "time": "2.30 pm",
-                "venue": "Open Mic Stage"
-              },
-              {
-                "event": "Shadow Art",
-                "time": "3.00 pm",
-                "venue": "Hi Tech"
-              },
-              {
-                "event": "Poetry",
-                "time": "3.30 pm",
-                "venue": "Open Mic Stage"
-              },
-              {
-                "event": "Meme Making",
-                "time": "3.30 pm",
-                "venue": "Hi Tech"
-              },
-              {
-                "event": "Drama",
-                "time": "3.30 pm",
-                "venue": "Common Hall"
-              },
-              {
-                "event": "Ladi Shah (Story telling )",
-                "time": "12.00 pm",
-                "venue": "Hi Tech"
-              },
-              {
-                "event": "Acapella (Group Singing)",
-                "time": "4.30 pm to 6.00 pm",
-                "venue": "Main Stage"
-              },
-              {
-                "event": "Mr and Ms Cultural Fest",
-                "time": "6.00 pm to 6.30 pm",
-                "venue": "Main Stage"
-              },
-              {
-                "event": "Choreonight",
-                "time": "6.30 pm to 8.30 pm",
-                "venue": "Main Stage"
-              }
-            ]
+              const eventsd2 = [
+  {
+    "event": "Live Photography",
+    "time": "8.00 am - 8.00 pm",
+    "venue": "Campus",
+    "image": "live-photography.jpg"
+  },
+  {
+    "event": "30 Sec Reels Making Competition",
+    "time": "8.00 am – 8.00 pm",
+    "venue": "Campus",
+    "image": "30-sec-reels-making-competition.jpg"
+  },
+  {
+    "event": "Wall Painting (Theme- Beautiful Kashmir)",
+    "time": "9.00 am",
+    "venue": "Compound Wall",
+    "image": "wall-painting.jpg"
+  },
+  {
+    "event": "Solo Dance Eastern",
+    "time": "9.00 am",
+    "venue": "Common Hall",
+    "image": "solo-dance-eastern.jpg"
+  },
+  {
+    "event": "Solo Song Western",
+    "time": "9.30 am",
+    "venue": "Open Stage",
+    "image": "solo-song-western.jpg"
+  },
+  {
+    "event": "Origami Studio",
+    "time": "10.00 am to 11.30 am",
+    "venue": "LH",
+    "image": "origami-studio.jpg"
+  },
+  {
+    "event": "The Trained Cuisine (South)",
+    "time": "11.30 am to 1.00 pm",
+    "venue": "LH",
+    "image": "trained-cuisine-south.jpg"
+  },
+  {
+    "event": "Mimicry",
+    "time": "10.00 am",
+    "venue": "Open Mic Stage",
+    "image": "mimicry.jpg"
+  },
+  {
+    "event": "Game Zone",
+    "time": "10.00 am to 5.00 pm",
+    "venue": "PF",
+    "image": "game-zone.jpg"
+  },
+  {
+    "event": "Tattoo Making Studio",
+    "time": "3.30 pm to 5.00 pm",
+    "venue": "Drawing Hall",
+    "image": "tattoo-making-studio.jpg"
+  },
+  {
+    "event": "India Land of Unity in Diversity (Culture Show)",
+    "time": "2.00 pm",
+    "venue": "Common Hall",
+    "image": "culture-show.jpg"
+  },
+  {
+    "event": "BeatBox",
+    "time": "2.30 pm",
+    "venue": "Open Mic Stage",
+    "image": "beatbox.jpg"
+  },
+  {
+    "event": "Shadow Art",
+    "time": "3.00 pm",
+    "venue": "Hi Tech",
+    "image": "shadow-art.jpg"
+  },
+  {
+    "event": "Poetry",
+    "time": "3.30 pm",
+    "venue": "Open Mic Stage",
+    "image": "poetry.jpg"
+  },
+  {
+    "event": "Meme Making",
+    "time": "3.30 pm",
+    "venue": "Hi Tech",
+    "image": "meme-making.jpg"
+  },
+  {
+    "event": "Drama",
+    "time": "3.30 pm",
+    "venue": "Common Hall",
+    "image": "drama.jpg"
+  },
+  {
+    "event": "Ladi Shah (Story telling )",
+    "time": "12.00 pm",
+    "venue": "Hi Tech",
+    "image": "ladi-shah.jpg"
+  },
+  {
+    "event": "Acapella (Group Singing)",
+    "time": "4.30 pm to 6.00 pm",
+    "venue": "Main Stage",
+    "image": "acapella.jpg"
+  },
+  {
+    "event": "Mr and Ms Cultural Fest",
+    "time": "6.00 pm to 6.30 pm",
+    "venue": "Main Stage",
+    "image": "mr-and-ms-cultural-fest.jpg"
+  },
+  {
+    "event": "Choreonight",
+    "time": "6.30 pm to 8.30 pm",
+    "venue": "Main Stage",
+    "image": "choreonight.jpg"
+  }
+];
+
             
 // Get the container where you want to render the data
             var container = document.getElementById('container'); // Replace 'container' with the actual ID of your container element
@@ -444,20 +532,27 @@
             // Loop through the data and create HTML elements
             eventsd1.forEach(event => {
                 const div = document.createElement('div');
-                div.classList.add('col-11', 'col-md-4','mb-4', 'col-lg-3', 'artist-single');
+                div.classList.add('col-md-4');
 
                 div.innerHTML = `
-                    <figure class="featured-image">
-                        <div class="event_card">
-                            <h1>${event.event}</h1>
-                            <div class="details">
-                                <h3><i class="fa-solid fa-diamond"></i>${event.time}</h3>
-                                <h3><i class="fa-solid fa-diamond"></i>${event.venue}</h3>
-                            </div>
+                <div>
+                  <a class="img" href="#"> 
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <img src="${event.image}">
+                           
+                            <div class="ripple-cont"></div>
                         </div>
-                        <a href="#" class="box-link"> <img src="images/box.png" alt> </a>
-                    </figure><!-- featured-image -->
+                        <div class="table">
+                            <div class="card-caption">${event.event}</div>
+                            <h6 class="category text-info">${event.time}</h6>
+                            <p class="card-description">${event.venue}</p>
+                        </div>
+                    </div>
+                  </a>
+                  </div>
                 `;
+
 
                 // Append the created element to the container
                 container.appendChild(div);
@@ -465,19 +560,25 @@
             container = document.getElementById('container-d2');
             eventsd2.forEach(event => {
                 const div = document.createElement('div');
-                div.classList.add('col-11', 'col-md-4','mb-4', 'col-lg-3', 'artist-single');
+                div.classList.add('col-md-4');
 
                 div.innerHTML = `
-                    <figure class="featured-image">
-                        <div class="event_card">
-                            <h1>${event.event}</h1>
-                            <div class="details">
-                                <h3><i class="fa-solid fa-diamond"></i>${event.time}</h3>
-                                <h3><i class="fa-solid fa-diamond"></i>${event.venue}</h3>
-                            </div>
+                <div>
+                  <a class="img" href="#"> 
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <img src="${event.image}">
+                           
+                            <div class="ripple-cont"></div>
                         </div>
-                        <a href="#" class="box-link"> <img src="images/box.png" alt> </a>
-                    </figure><!-- featured-image -->
+                        <div class="table">
+                            <div class="card-caption">${event.event}</div>
+                            <h6 class="category text-info">${event.time}</h6>
+                            <p class="card-description">${event.venue}</p>
+                        </div>
+                    </div>
+                  </a>
+                  </div>
                 `;
 
                 // Append the created element to the container
@@ -485,13 +586,13 @@
             });
 
           </script>
-        <script type='text/javascript' src='js/jquery.js'></script>
-        <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-        <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-        <script type='text/javascript' src='js/swiper.min.js'></script>
-        <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-        <script type='text/javascript' src='js/circle-progress.min.js'></script>
-        <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
-        <script type='text/javascript' src='js/custom.js'></script>
-    </body>
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+  </body>
 </html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <style>
+        /* This css file is to over write bootstarp css
+---------------------------------------------------------------------- */
+
+
+/*
+Theme Name: Modern - Bootstrap 4 Cards
+Theme URI: http://adamthemes.com/
+Author: AdamThemes
+Author URI: http://adamthemes.com/
+Description: Modern - Bootstrap 4 Cards by AdamThemes
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: card, cards, css3, modern, adamthemes, bootstrap, profile
+*---------------------------------------------------------------------- */
+
+
+/*---------------------------------------------------------------------- 
+TABLE OF CONTENTS
+
+// 1. SECTIONS
+// 2. CARDS
+//      2.1 Card Table 
+//      2.1 Card Blog 
+//      2.1 Card Background 
+//      2.1 Card Profile 
+//      2.1 Card Category 
+//      2.1 Card Author 
+//      2.1 Card Product
+//      2.1 Card Testimonial
+//      2.1 Text Color
+// 3. BUTTONS
+// 4. SOCIAL MEDIA BUTTONS
+// 5. BOOTSTRAP COL-MD-12 CLASS
+// 6. FONT AWESOME FA CLASS
+
+------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------- /
+SECTIONS
+----------------------------------------------------------------------- */
+
+.section-cards {
+    z-index: 3;
+    position: relative;
+}
+
+.section-gray {
+    background: #E5E5E5;
+    padding: 60px 0 30px 0;
+}
+
+
+/*---------------------------------------------------------------------- /
+CARDS
+----------------------------------------------------------------------- */
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.card .card-image .card-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.img-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .ftr {
+    margin-top: 15px;
+}
+
+.card .ftr div {
+    display: inline-block;
+}
+
+.card .ftr .author {
+    color: #888;
+}
+
+.card .ftr .stats {
+    float: right;
+    line-height: 30px;
+}
+
+.card .ftr .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+
+
+/* ============ Card Blog ============ */
+
+.card-blog {
+    margin-top: 30px;
+}
+
+.card-blog .card-caption {
+    margin-top: 5px;
+}
+
+.card-blog .card-image + .category {
+    margin-top: 20px;
+}
+
+.card-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ============ Card Background ============ */
+
+
+
+/* ============ Card Profile ============ */
+
+.card-profile {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* ============ Card Category ============ */
+
+.category {
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+}
+
+.card .category-social .fa {
+    font-size: 24px;
+    position: relative;
+    margin-top: -4px;
+    top: 2px;
+    margin-right: 5px;
+}
+
+
+
+
+/*---------------------------------------------------------------------- /
+BUTTONS
+----------------------------------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn,
+.navbar .navbar-nav > li > a.btn {
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 12px 30px;
+    margin: 10px 1px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+    outline: 0;
+}
+
+.btn.btn-round,
+.navbar .navbar-nav > li > a.btn.btn-round {
+    border-radius: 30px;
+}
+
+.btn.btn-just-icon,
+.navbar .navbar-nav > li > a.btn.btn-just-icon {
+    font-size: 20px;
+    padding: 12px 12px;
+    line-height: 1em;
+}
+
+.btn.btn-just-icon i,
+.navbar .navbar-nav > li > a.btn.btn-just-icon i {
+    width: 20px;
+}
+
+
+/* Button Info */
+
+.btn.btn-info {
+    background-color: #00bcd4;
+    color: #FFFFFF;
+}
+
+.btn.btn-info:focus,
+.btn.btn-info:active,
+.btn.btn-info:hover {
+    box-shadow: 0 14px 26px -12px rgba(0, 188, 212, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
+}
+
+
+/* Button Danger */
+
+.btn.btn-danger {
+    background-color: #f44336;
+    color: #FFFFFF;
+}
+
+.btn.btn-danger:focus,
+.btn.btn-danger:active,
+.btn.btn-danger:hover {
+    box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+}
+
+
+/* Button Warning */
+
+.btn.btn-warning.btn-simple:hover,
+.btn.btn-warning.btn-simple:focus,
+.btn.btn-warning.btn-simple:active {
+    background-color: transparent;
+    color: #ff9800;
+}
+
+.btn.btn-warning.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-warning.btn-simple {
+    background-color: transparent;
+    color: #ff9800;
+    box-shadow: none;
+}
+
+.btn.btn-warning,
+.navbar .navbar-nav > li > a.btn.btn-warning {
+    box-shadow: 0 2px 2px 0 rgba(255, 152, 0, 0.14), 0 3px 1px -2px rgba(255, 152, 0, 0.2), 0 1px 5px 0 rgba(255, 152, 0, 0.12);
+}
+
+
+/* Button Rose */
+
+.btn.btn-rose.btn-simple:hover,
+.btn.btn-rose.btn-simple:focus,
+.btn.btn-rose.btn-simple:active {
+    background-color: transparent;
+    color: #e91e63;
+}
+
+.btn.btn-rose.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-rose.btn-simple {
+    background-color: transparent;
+    color: #e91e63;
+    box-shadow: none;
+}
+
+
+/* Button White */
+
+.btn.btn-white,
+.btn.btn-white:focus,
+.btn.btn-white:hover {
+    background-color: #FFFFFF;
+    color: #888;
+}
+
+.btn.btn-white.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-white.btn-simple {
+    color: #FFFFFF;
+    background: transparent;
+    box-shadow: none;
+}
+
+/***********Only4Demo*******************/
+/**************************************/
+
+/* ======= GENERAL  ======= */
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+a {
+    color: #9c27b0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9c27b0;
+    text-decoration: underline;
+}
+
+p {
+    color: #3C4857;
+}
+
+header {
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+}
+
+
+h1, .h1 {
+  font-size: 3.8em;
+}
+
+h2, .h2 {
+  font-size: 2.0em;
+  line-height: 1.6em;
+  margin: 15px 0 15px;
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  text-align: center;
+}
+
+h3, .h3 {
+  font-size: 1.825em;
+  line-height: 1.4em;
+  margin: 30px 0 30px;
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  text-align: center;
+}
+
+h4, .h4 {
+  font-size: 1.3em;
+  line-height: 1.55em;
+}
+
+h5, .h5 {
+  font-size: 1.25em;
+  line-height: 1.55em;
+  margin-bottom: 15px;
+}
+
+h6, .h6 {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cards-1 section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <a href="#"> <img class="img" src="./images/1.png">
+                                <div class="card-caption"> Quisque a bibendum magna </div>
+                            </a>
+                            <div class="ripple-cont"></div>
+                        </div>
+                        <div class="table">
+                            <h6 class="category text-info">Cinema</h6>
+                            <p class="card-description"> Lorem ipsum dolor sit amet, consectetur adipis cingelit. Etiam lacinia elit et placerat finibus. Praesent justo metus, pharetra vel nibh sit amet, tincidunt posuere nulla. Vivamus odio antement, feugiat eget nisi sit amet, scelerisque dignissim velit antement. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
