@@ -22,7 +22,7 @@
     <link rel="mask-icon" href="../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="../css/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -125,11 +125,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="entry-header">
-                        <h2 class="entry-title">Standup Comedy</h2>
+                        <h2 class="entry-title">Choreonight</h2>
 
                         <ul class="breadcrumbs flex align-items-center">
                             <li><a href="#">Home</a></li>
-                            <li>Standup Comedy</li>
+                            <li>Choreonight</li>
                         </ul>
                         <!-- .breadcrumbs -->
                     </div>
@@ -151,7 +151,7 @@
                     <p id="description"></p>
                 </div>
                 <div class="eligibility">
-                    <h3>Eligibility</h3>
+                    <h3>Entry Fee</h3>
                     <p id="nit"></p>
                     <p id="other"></p>
                 </div>
@@ -166,7 +166,8 @@
                         <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_venue">
                             Rules/Prizes
                         </li>
-                        <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_organizers">
+                        <li class="tab-nav flex justify-content-center align-items-center"
+                            data-target="#tab_organizers">
                             Judging Crieteria
                         </li>
                     </ul>
@@ -176,7 +177,7 @@
                         <div id="tab_venue" class="tab-content">
                             <h1 class="entry-header">Rules/Prizes</h1>
                             <div id="eventRules"></div>
-                            <h1 class="mt-5">Prizes</h1>
+                            <h1>Prizes</h1>
                             <div id="eventPrizes"></div>
                         </div>
 
@@ -190,7 +191,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <footer class="site-footer">
         <div class="footer-cover-title flex justify-content-center align-items-center">
@@ -255,54 +256,61 @@
     <script src="eventPopulate.js"></script>
     <script>
         var eventData = {
-  "title": "Stand-up Comedy",
+  "title": "Choreonight",
   "main-content": {
-    "description": "All the young comedians out there, get ready to tickle the audience with the best of your comic skills. Be the reason for all the giggles and laughs around, and be the best of all.",
+    "description": "Burn up the dance floor with Rang-e-Chinar’s Dance Cluster. All you need is a costume of confidence to unveil your moves and leave your signature. Put on your dancing shoes, assemble your team, and get ready to battle it out for the crown of Choreo Night. Steal the spotlight and be the star.",
     "entry_fee": {
-      "NIT Srinagar Students": [null],
-      "Other Institute Students": [null]
+      "NIT Srinagar Students": ["No entry fee for NIT students per team"],
+      "Other Institute Students": ["Rs. 200/- (Outside)"]
     },
     "contacts": [
       {
-        "name": "Adil Nabi",
-        "phone": "70065 87728",
-        "email": null
+        "name": "Ravi",
+        "phone": "8949328450",
+        "email": "ravi_2020bciv132@nitsri.ac.in"
       },
       {
         "name": "Manjeet Kumar",
         "phone": "6005336839",
-        "email": null
+        "email": "manjeet_2021bele002@nitsri.ac.in"
+      },
+      {
+        "name": "Janvi",
+        "phone": "9699408586",
+        "email": "janhvi_2022bmec075@nitsri.ac.in"
+      },
+      {
+        "name": "Ayush",
+        "phone": "8957026806"
       }
     ]
   },
   "tabs": {
     "Rules/Prizes": {
       "rules": {
-        "Competition Type": "Individual competition",
-        "Time Limit": "4-5 Minutes (inclusive of Stage setup). Negative marking for exceeding time limit.",
-        "Content Guidelines": "No participant can point out any individual or religion in any way, and any dual meaning obscene content is strictly not allowed.",
-        "Judges' Decision": "Decision of the judges will be final and binding.",
-        "Team Composition": "A team must contain a max of 3 members.",
-        "Participant Age": "Open for all participants above the age of 15.",
-        "Language": "Performances can be in Hindi/Urdu or English.",
-        "Video Recording": "Participants are requested to send a video recording of the performance before the given deadline for shortlisting purposes.",
-        "Content Restrictions": "No obscenity, foul language, or political views will be entertained and can result in cancellation of candidature."
+        "Members": "A minimum of 15 and a maximum of 25 members are allowed in a team.",
+        "Theme": "Performance should represent any theme.",
+        "Time Limit": "The time limit for the performance is 15 minutes. There will be negative marking if the group does not adhere to the time limit.",
+        "Judges' Decision": "Management or Judges have the right to disqualify a dance group at their discretion due to misconduct, inappropriate language, political or controversial topics and/or distasteful behavior. All songs must be appropriate for a family-oriented environment.",
+        "Guidelines": "Performance should not include any injurious stunts and/or moves with high-risk and vulgarity.",
+        "Rules": "Use of props and other creative materials should be used unless it provokes any kind of unsuitable behavior and fires and water and mercury breaking is not allowed."
       },
       "prizes": {
-        "Certificates": "Certificates will be provided to all the participants."
-      }
+         "Prizes": "Winners will be felicitated with Shield/memento. E-Certificate will be awarded to all the participants."
+       }
     },
     "Judging Criteria": {
       "criteria": {
-        "Content": "Content",
-        "Fluency": "Fluency",
-        "Spontaneity": "Spontaneity",
-        "Presentation": "Presentation",
-        "Sense of Humor": "Sense of humor"
+        "1": "Judging criteria includes greater weightage for cohesion and coordination between the dancers.",
+        "2": "Creativity",
+        "3": "Overall impression/impact",
+        "4": "Uniqueness of concept"
       }
     }
   }
 }
+
+
 
 // Call the function to populate the data
 populateEventData();

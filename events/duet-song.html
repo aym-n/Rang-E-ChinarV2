@@ -14,6 +14,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="../css/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -40,12 +49,12 @@
         <div class="header-bar">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-10 col-lg-4">
+                    <div class="col-10 col-lg-2">
                         <a href="index.html" class="site-branding"><img src="../images/rang-e-chinar logo.png" alt=""
                                 style="max-height: 125px;"></a>
                     </div>
 
-                    <div class="col-2 col-lg-8">
+                    <div class="col-2 col-lg-10">
                         <nav class="site-navigation">
                             <div class="hamburger-menu d-lg-none">
                                 <span></span>
@@ -116,11 +125,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="entry-header">
-                        <h2 class="entry-title">Standup Comedy</h2>
+                        <h2 class="entry-title">Duet Song</h2>
 
                         <ul class="breadcrumbs flex align-items-center">
                             <li><a href="#">Home</a></li>
-                            <li>Standup Comedy</li>
+                            <li>Duet Song</li>
                         </ul>
                         <!-- .breadcrumbs -->
                     </div>
@@ -142,7 +151,7 @@
                     <p id="description"></p>
                 </div>
                 <div class="eligibility">
-                    <h3>Eligibility</h3>
+                    <h3>Entry Fee</h3>
                     <p id="nit"></p>
                     <p id="other"></p>
                 </div>
@@ -157,7 +166,8 @@
                         <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_venue">
                             Rules/Prizes
                         </li>
-                        <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_organizers">
+                        <li class="tab-nav flex justify-content-center align-items-center"
+                            data-target="#tab_organizers">
                             Judging Crieteria
                         </li>
                     </ul>
@@ -167,7 +177,6 @@
                         <div id="tab_venue" class="tab-content">
                             <h1 class="entry-header">Rules/Prizes</h1>
                             <div id="eventRules"></div>
-                            <h1 class="mt-5">Prizes</h1>
                             <div id="eventPrizes"></div>
                         </div>
 
@@ -181,7 +190,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <footer class="site-footer">
         <div class="footer-cover-title flex justify-content-center align-items-center">
@@ -246,55 +255,50 @@
     <script src="eventPopulate.js"></script>
     <script>
         var eventData = {
-  "title": "Drama",
-  "main-content": {
-    "description": "Get ready for a thrilling Drama Competition where thespians from far and wide bring stories to life on stage. From intense monologues to captivating ensembles, witness the power of storytelling.",
-    "entry_fee": {
-      "NIT Srinagar Students": ["No entry fee"],
-      "Other Institute Students": ["100 INR per team"]
-    },
-    "contacts": [
-      {
-        "name": "Manjeet Kumar",
-        "phone": "6005336839",
-        "email": "manjeet_2021bele002@nitsri.ac.in"
+            "title": "Duet Song",
+            "main-content": {
+                "description": "Tag along your best buddy and electrify the stage with your melodies. Step into a world of synchronized grace and rhythmic finesse at our duet song event. This enchanting showcase celebrates the seamless coordination between two dancers, as they weave together a captivating narrative through the language of movement.",
+                "entry_fee": {
+                    "NIT Srinagar Students": ["Free"],
+                    "Other Institute Students": ["₹ 50"]
+                },
+                "contacts": [
+                    {
+                        "name": "Harshit Singh",
+                        "phone": "9140363284"
+                    },
+                    {
+                        "name": "Kriti Srivastava",
+                        "phone": "8899618806"
+                    }
+                ]
+            },
+            "tabs": {
+                "Rules/Prizes": {
+                    "rules": {
+                        "Time Limit": "The time limit for the performance shall be 5 min (3 min extra for stage setup). Exceeding the time limit can result in negative marking.",
+                        "Content Guidelines": "The performances can be of any genre (Classical/ Semi Classical/ Western etc.).",
+                        "Team Composition": "A pair may consist of any two persons above the age of 15 (Girl/Boy, Boy/Boy, Girl/Girl).",
+                        "Language": "No language barrier.",
+                        "Competition Type": "Musical instruments are allowed (with ONLY one instrument player along with the pair).",
+                        "Video Recording": "In case of pre-recorded music (karaoke, etc), the recording should be submitted to the organizing team beforehand.",
+                        "Email": "A video recording of the performance should be sent beforehand, and shortlisted participants will be informed via email.",
+                        "Content Restrictions": "No obscenity/ foul language/ political views will be entertained and can result in cancellation of candidature."
       },
-      {
-        "name": "Adil Nabi",
-        "phone": "7006587728",
-        "email": null
-      }
-    ]
-  },
-  "tabs": {
-    "Rules/Prizes": {
-      "rules": {
-        "Participation": "Each participating institute can depute a single team having a minimum of 5 and a maximum of 15 student participants.",
-        "Language": "The competition will be held in Hindi/Urdu/English language only.",
-        "Duration": "The total duration of performance is a minimum of 15 and a maximum of 20 minutes.",
-        "Set Arrangements": "For setting and dismantling the set/light arrangements, a time period of 10 minutes before the play and 5 minutes after the play, special requests have to be conveyed to the organizing team beforehand.",
-        "Play Format": "The play can be in prose or in verse.",
-        "Accompanists": "Maximum 3 accompanists/backstage artists/workers/helpers shall be allowed in this event.",
-        "Script and Censorship": "It will be solely the responsibility of the participating institute to see that the script is duly censored. Obtaining all sorts of required permission, censor certificates, etc., shall be the responsibility of the participating institute.",
-        "Repetition": "No play shall be repeated by the same college in consecutive Youth Festivals.",
-        "Documentation": "Three copies of script, theme of the scripts explained in English, and printouts of forms of roles played must be submitted at the time of registration."
-      },
-      "prizes": {
-        "Top 3 Winners": "Top 3 Winners will be felicitated.",
-        "Certificates": "E-Certificate will be awarded to all participants."
-      }
-    },
-    "Judging Criteria": {
-      "criteria": {
-        "Creativity of Drama": "35%",
-        "Language": "30%",
-        "Overall Coordination and Presentation": "25%",
-        "Positive Value and Message": "10%"
-      }
-    }
-  }
-}
-
+                    "prizes": {}
+                },
+                "Judging Criteria": {
+                    "criteria": {
+                        "Marking scheme": "Out of 100",
+                        "Vocal Ability": "30 marks",
+                        "Coordination": "20 marks",
+                        "Rhythm and Timing": "20 marks",
+                        "Pronunciation": "10 marks",
+                        "Overall Impact and Presentation": "20 marks"
+                    }
+                }
+            }
+        }
 
 
 // Call the function to populate the data
