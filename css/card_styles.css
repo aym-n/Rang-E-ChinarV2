@@ -1,4 +1,6 @@
-
+.cinzel{
+    font-family: 'cinzel' !important;
+}
 .section-cards {
     z-index: 3;
     position: relative;
@@ -50,6 +52,10 @@ CARDS
     color: #fff;
     font-size: 1.3em;
     text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.text-info{
+    color: lightsalmon !important;
 }
 
 .card img {
@@ -183,9 +189,16 @@ h6, .h6 {
 }
 
 .card-caption{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
+    color: #A2834B !important;
+    font-family: 'cinzel-deco';
 }
+
+.card-description{
+    font-family: 'cinzel';
+}
+
 
 .card-image{
     transition: transform 0.2s ease-in-out;
