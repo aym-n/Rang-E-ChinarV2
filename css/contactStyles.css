@@ -22,9 +22,16 @@
     padding: 2rem;
 }
 
+
+
+
 .text{
     padding:1rem 1rem 0rem 1rem;
     border-radius: 1rem;
+}
+
+.text p{
+    color: black;
 }
 
 .text :first-child {
