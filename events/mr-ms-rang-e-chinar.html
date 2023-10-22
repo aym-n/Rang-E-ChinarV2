@@ -40,6 +40,7 @@
         .about-us .page-header {
             background: url("../images/monoact.png") no-repeat !important;
             background-size: cover !important;
+            background-position: center !important;
         }
     </style>
 </head>
@@ -50,7 +51,7 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-10 col-lg-2">
-                        <a href="index.html" class="site-branding"><img src="../images/rang-e-chinar logo.png" alt=""
+                        <a href="../index.html" class="site-branding"><img src="../images/rang-e-chinar logo.png" alt=""
                                 style="max-height: 125px;"></a>
                     </div>
 
@@ -66,9 +67,9 @@
                             </div><!-- .hamburger-menu -->
 
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="event-category.html">Events</a></li>
-                                <li><a href="sponsors.html">Sponsor</a></li>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../event-category.html">Events</a></li>
+                                <li><a href="../sponsors.html">Sponsor</a></li>
                                 <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,7 +77,7 @@
                                     </a>
                                     <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Attendee</a>
-                                        <a class="dropdown-item" href="event-category.html">Participant</a>
+                                        <a class="dropdown-item" href="../event-category.html">Participant</a>
                                         <a class="dropdown-item"
                                             href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link">Institute</a>
                                         <!-- Add more event categories as needed -->
@@ -89,14 +90,14 @@
                                     </a>
                                     <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
 
-                                        <a class="dropdown-item" href="events.html">Schedule</a>
-                                        <a class="dropdown-item" href="docs/rang-e-chinar general brochure.pdf"
+                                        <a class="dropdown-item" href="../events.html">Schedule</a>
+                                        <a class="dropdown-item" href="../docs/rang-e-chinar general brochure.pdf"
                                             download>Brochure</a>
                                         <a class="dropdown-item" href="#">Rulebook</a>
                                         <!-- Add more event categories as needed -->
                                     </div>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
                                 <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link" target="_blank">Registration</a></li> -->
                             </ul><!-- flex -->
                         </nav><!-- .site-navigation -->
@@ -177,6 +178,7 @@
                         <div id="tab_venue" class="tab-content">
                             <h1 class="entry-header">Rules/Prizes</h1>
                             <div id="eventRules"></div>
+                            <h1 class="mt-5">Rules</h1>
                             <h1 class="mt-5">Prizes</h1>
                             <div id="eventPrizes"></div>
                         </div>
@@ -187,7 +189,8 @@
                         </div>
                     </div>
 
-                    <a href="https://rang-e-chinar.nitsri.ac.in/events.html#" class="register btn current w-100 my-5 each-event-register">Register</a>
+                    <a href="https://rang-e-chinar.nitsri.ac.in/events.html#"
+                        class="register btn current w-100 my-5 each-event-register">Register</a>
                 </div>
             </div>
         </div>
@@ -256,58 +259,82 @@
     <script src="eventPopulate.js"></script>
     <script>
         var eventData = {
-  "title": "Mr. & Ms. Rang-e-Chinar",
-  "main-content": {
-    "description": "The Mr. and Ms. Rang-e-Chinar is a platform for young and talented individuals to express themselves and celebrate their diverse cultures. You will get a chance to compete in various rounds such as talent, fashion, trivia, and interview, where you will be judged by a panel of experts. You will also get to interact with other participants, learn from their experiences, and make new friends.",
-    "entry_fee": {
-      "NIT Srinagar Students": ["50 INR"],
-      "Other Institute Students": ["200 INR"]
-    },
-    "contacts": [
-      {
-        "name": "Gupta Gurudayal Rajesh",
-        "phone": "9541887038",
-        "email": "gupta_2022bche007@nitsri.ac.in"
-      },
-      {
-        "name": "Additional contacts",
-        "phone": "8208492297",
-        "email": "sanskrutikakad019@gmail.com"
+            "title": "Mr. & Ms. Rang-e-Chinar",
+            "main-content": {
+                "description": "The Mr. and Ms. Rang-e-Chinar is a platform for young and talented individuals to express themselves and celebrate their diverse cultures. You will get a chance to compete in various rounds such as talent, fashion, trivia, and interview, where you will be judged by a panel of experts. You will also get to interact with other participants, learn from their experiences, and make new friends.",
+                "entry_fee": {
+                    "NIT Srinagar Students": ["Rs. 50 INR"],
+                    "Other Institute Students": ["Rs. 200 INR"]
+                },
+                "contacts": [
+                    {
+                        "name": "Gupta Gurudayal Rajesh",
+                        "phone": "9541887038",
+                        "email": "gupta_2022bche007@nitsri.ac.in"
+                    },
+                    {
+                        "phone": "8208492297",
+                        "email": "sanskrutikakad019@gmail.com"
+                    }
+                ]
+            },
+            "tabs": {
+                "Rules/Prizes": {
+                    "rules": {
+                        "The decisions made by the judges shall be deemed final.": true,
+                        "Excessive exposive clothes are not allowed.": true,
+                        "Candidates are expected to refrain from using offensive or lewd language.": true,
+                        "Candidates are required to be present for Round 1 (the Interview) on proper time, no delays shall be entertained.": true,
+                        "All necessary materials must be brought by the candidates themselves.": true,
+                        "Candidates are obligated to present photographs of their costumes during the Interview.": true,
+                        "Any breach of the rules during any phase of the event will result in disqualification.": true,
+                        "No exceptions or appeals regarding rule violations shall be entertained.": ture
+                    },
+                    "prizes": {
+                        "Mr. Rang-e-Chinar and Ms. Rang-e-Chinar": true,
+                        "Crown for Ms. Rang-e-Chinar and Trophy for Mr. Rang-e-Chinar": true,
+                        "Certificate of merit for winners": true,
+                        "Candidates who successfully advance to the second round will receive a Certificate of Participation.": true,
+                        "Prize pool of 10,000 INR.": true
       }
-    ]
-  },
-  "tabs": {
-    "Rules/Prizes": {
-      "rules": {
-        "Decisions by Judges": "The decisions made by the judges shall be deemed final.",
-        "Excessive Exposive Clothes": "Excessive exposive clothes are not allowed.",
-        "Offensive or Lewd Language": "Candidates are expected to refrain from using offensive or lewd language.",
-        "Punctuality": "Candidates are required to be present for Round 1 (the Interview) on proper time, no delays shall be entertained.",
-        "Material and Costumes": "All necessary materials must be brought by the candidates themselves. Candidates are obligated to present photographs of their costumes during the Interview.",
-        "Disqualification": "Any breach of the rules during any phase of the event will result in disqualification. No exceptions or appeals regarding rule violations shall be entertained."
-      },
-      "prizes": {
-        "Title": "Mr. Rang-e-Chinar and Ms. Rang-e-Chinar",
-        "Awards": "Crown for Ms. Rang-e-Chinar and Trophy for Mr. Rang-e-Chinar",
-        "Certificates": "Certificate of merit for winners",
-        "Participants in Round 2": "Candidates who successfully advance to the second round will receive a Certificate of Participation.",
-        "Prize Pool": "Prize pool of 10,000 INR.",
-        "Mandatory": "It is mandatory to have a comprehensive understanding and knowledge of recent news and development.",
-        "Basic Etiquettes": "Candidates must have at least basic etiquettes, skill, and knowledge of ramp walk.",
-        "Communication Aptitude": "Candidates must have exemplary communication aptitude.",
-        "Affiliation": "Candidates must be affiliated students of any college.",
-        "Fees": "Fees: 200 INR, 50 INR for NIT Srinagar students"
-      }
-    },
-    "Judging Criteria": {
-        "criteria": {
-      "Round 1 (Talent Search)": "Communication Skills (20 points), Confidence (15 points), Creativity and Originality (15 points), Knowledge of Cultural Diversity (20 points), Passion for the Arts and Culture (15 points), Cultural Awareness (15 points), Overall Impression (20 points), Relevance to the Event Theme (10 points), Ability to Connect with the Audience (10 points), Adaptability (10 points), Pictures (of you in your performing costume) (30 points), Portfolio (20 points) - Total = 200 points",
-      "Round 2 (Ramp Walk)": "Posture and balance: 10 points, Grooming and presentation: 15 points, Comfortable attire selection: 15 points, Suitability of style and fabric to individual body type: 20 points, Attractive and comfortable fit: 20 points, Proper coordination and appropriateness of accessories: 20 points - Total = 100 points",
-      "Round 3 (Finale)": "Creativity and Originality (15 points), Depth of Understanding (15 points), Articulation and Clarity (15 points), Relevance to Event Theme (15 points), Passion and Enthusiasm (15 points), Sensitivity to Cultural Differences (15 points), Engagement with the Audience (10 points) - Total = 100 points"
-    }
-    }
-  }
-}
+                },
+                "Judging Criteria": {
+                    "criteria": {
+                        "Round 1 (Talent search)": {
+                            "Communication Skills": 20,
+                            "Confidence": 15,
+                            "Creativity and Originality": 15,
+                            "Knowledge of Cultural Diversity": 20,
+                            "Passion for the Arts and Culture": 15,
+                            "Cultural Awareness": 15,
+                            "Overall Impression": 20,
+                            "Relevance to the Event Theme": 10,
+                            "Ability to Connect with the Audience": 10,
+                            "Adaptability": 10,
+                            "Pictures (of you in your performing costume)": 30,
+                            "Portfolio": 20
+                        },
+                        "Round 2 (Ramp Walk)": {
+                            "Posture and balance": 10,
+                            "Grooming and presentation": 15,
+                            "Comfortable attire selection": 15,
+                            "Suitability of style and fabric to individual body type": 20,
+                            "Attractive and comfortable fit": 20,
+                            "Proper coordination and appropriateness of accessories": 20
+                        },
+                        "Round 3 (Finale)": {
+                            "Creativity and Originality": 15,
+                            "Depth of Understanding": 15,
+                            "Articulation and Clarity": 15,
+                            "Relevance to Event Theme": 15,
+                            "Passion and Enthusiasm": 15,
+                            "Sensitivity to Cultural Differences": 15,
+                            "Engagement with the Audience": 10
+                        }
+                    }
+                }
+            }
+        }
 
 
 
