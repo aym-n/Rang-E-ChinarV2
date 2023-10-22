@@ -27,6 +27,10 @@
     border-radius: 1rem;
 }
 
+.text p{
+    color: black;
+}
+
 .text :first-child {
     font-weight: 600;
     font-size: 1rem;
