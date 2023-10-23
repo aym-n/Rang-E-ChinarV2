@@ -24,6 +24,8 @@
   
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./css/loginstyles.css">
   
     <!-- styles defined by us -->
     <link rel="stylesheet" href="./defclass.css">
@@ -336,6 +338,7 @@
               console.log(data);
               message.innerHTML = "Form Submitted Successfully.";
               message.style.color = "green";
+              document.getElementById('myForm').reset();
             })
             .catch((error) => {
               console.error("Error:", error);
@@ -343,6 +346,8 @@
               message.style.color = "red";
             });
         });
+
+
     </script>
   </body>
 </html>

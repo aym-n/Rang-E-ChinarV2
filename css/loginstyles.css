@@ -1,5 +1,6 @@
 .form_wrapper{
     padding: 2rem;
+    box-shadow: 0px 0px 20px grey;
 }
 
 .form_wrapper label{
@@ -24,3 +25,4 @@ form button{
     font-weight: 600;
     font-size: 1.05rem;
 }
+
