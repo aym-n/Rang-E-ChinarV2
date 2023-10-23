@@ -10,94 +10,131 @@
 
     <title>Hello World!</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
     <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css" />
-
+    <link rel="stylesheet" href="css/swiper.min.css">
+  
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="stylesheet" href="./css/loginstyles.css" />
+    <link rel="stylesheet" href="style.css">
+  
+    <!-- styles defined by us -->
+    <link rel="stylesheet" href="./defclass.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+              @media (max-width: 991px) {
+                  .navbar-expand-lg .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+                      display: block;
+                      position: static;
+                      float: none;
+                      width: auto;
+                      margin-top: 0;
+                      background-color: transparent;
+                      border: 0;
+                      box-shadow: none;
+                  }
+          
+                  .navbar-expand-lg .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+                      padding: .5rem 1.5rem;
+                      color: #000;
+                  }
+              }
+          </style>
   </head>
   <body class="about-us">
     <header class="site-header">
       <div class="header-bar">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-10 col-lg-4">
-              <h1 class="site-branding flex">
-                <a href="index.html">Rang-e-Chinar</a>
-              </h1>
-            </div>
-
-            <div class="col-2 col-lg-8 flex">
-              <nav class="site-navigation">
-                <div class="hamburger-menu d-lg-none">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <!-- .hamburger-menu -->
-
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html#about">About</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li>
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link"
-                      target="_blank"
-                      >Institute Registration</a
-                    >
-                  </li>
-                </ul>
-                <!-- flex -->
-              </nav>
-              <!-- .site-navigation -->
-            </div>
-            <!-- .col-12 -->
-          </div>
-          <!-- .row -->
-        </div>
-        <!-- container-fluid -->
-      </div>
-      <!-- header-bar -->
-    </header>
-    <!-- .site-header -->
-
+          <div class="container-fluid">
+              <div class="row align-items-center">
+                  <div class="col-10 col-lg-2">
+                    <a href="index.html" class="site-branding"><img src="images/rang-e-chinar logo.png" alt="" style="max-height: 100px;"></a>
+                  </div>
+  
+                  <div class="col-2 col-lg-10">
+                      <nav class="site-navigation">
+                          <div class="hamburger-menu d-lg-none">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </div><!-- .hamburger-menu -->
+  
+                          <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="event-category.html">Events</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                              <li><a href="sponsors.html">Sponsor</a></li>
+                              <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Register
+                                  </a>
+                                  <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link">Institute</a>
+                                      <a class="dropdown-item" href="event-category.html">Participant</a>
+                                      <a class="dropdown-item" href="#">Attendee</a>
+                                      <!-- Add more event categories as needed -->
+                                  </div>
+                              </li>
+                              <li class="nav-item dropdown"> <!-- Add class 'dropdown' here -->
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Resources
+                                  </a>
+                                  <div class="dropdown-menu dropdown_items" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="docs/rang-e-chinar general brochure.pdf" download>Brochure</a>
+                                      <a class="dropdown-item" href="#">Rulebook</a>
+                                      <!-- Add more event categories as needed -->
+                                  </div>
+                              </li>
+                              <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link" target="_blank">Registration</a></li> -->
+                          </ul><!-- flex -->
+                      </nav><!-- .site-navigation -->
+                  </div><!-- .col-12 -->
+              </div><!-- .row -->
+          </div><!-- container-fluid -->
+      </div><!-- header-bar -->
+  </header><!-- .site-header -->
+    <div class="sticky-social">
+      <ul class="social">
+        <li class="fb"><a href="https://www.instagram.com/rang_e_chinar/"><i class="fab fa-instagram"
+              aria-hidden="true"></i></a></li>
+        <li class="twitter"><a href="https://www.linkedin.com/company/rang-e-chinar/mycompany/"><i
+              class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li class="insta"><a href="https://www.youtube.com/@Rang_e_chinar"><i class="fab fa-youtube"
+              aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  
     <div class="page-header">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="entry-header">
-              <h2 class="entry-title">Register Now</h2>
-
+              <h2 class="entry-title ">Registration</h2>
+  
               <ul class="breadcrumbs flex align-items-center">
                 <li><a href="#">Home</a></li>
-                <li>Register</li>
+                <li>Registration</li>
               </ul>
               <!-- .breadcrumbs -->
             </div>
-            <!-- entry-header -->
+            <!-- .entry-header -->
           </div>
-          <!-- col-12 -->
+          <!-- .col-12 -->
         </div>
-        <!-- row -->
+        <!-- .row -->
       </div>
-      <!-- container -->
+      <!-- .container -->
     </div>
-    <!-- page-header -->
+    <!-- .page-header -->
 
     <div class="main-content">
       <div class="container">
@@ -268,7 +305,7 @@
             .then((response) => response.text())
             .then((data) => {
               console.log(data);
-              message.innerHTML = "Data is entered successfully.";
+              message.innerHTML = "Form Submitted Successfully.";
               message.style.color = "green";
             })
             .catch((error) => {
