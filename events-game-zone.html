@@ -3,30 +3,34 @@
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title></title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+  <title>Events - Rang-e-Chinar| NIT Srinagar</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+  <!-- FontAwesome CSS -->
   <!-- FontAwesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/card_styles.css">
 
-  <!-- styles defined by us -->
-  <link rel="stylesheet" href="./defclass.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- defined class -->
+  <link rel="stylesheet" href="./defclass.css" />
 </head>
 
-<body class="event-body event-category">
+<body class="tickets-page cinzel">
   <header class="site-header">
     <div class="header-bar">
         <div class="container-fluid">
@@ -111,77 +115,107 @@
 </header><!-- .site-header -->
   <div class="sticky-social">
     <ul class="social">
-      <li class="fb"><a href="https://www.instagram.com/rang_e_chinar/"><i class="fab fa-instagram"
-            aria-hidden="true"></i></a></li>
-      <li class="twitter"><a href="https://www.linkedin.com/company/rang-e-chinar/mycompany/"><i
-            class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-      <li class="insta"><a href="https://www.youtube.com/@Rang_e_chinar"><i class="fab fa-youtube"
-            aria-hidden="true"></i></a></li>
+      <li class="fb">
+        <a href="https://www.instagram.com/rang_e_chinar/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      </li>
+      <li class="twitter">
+        <a href="https://www.linkedin.com/company/rang-e-chinar/mycompany/"><i class="fab fa-linkedin-in"
+            aria-hidden="true"></i></a>
+      </li>
+      <li class="insta">
+        <a href="https://www.youtube.com/@Rang_e_chinar"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+      </li>
     </ul>
   </div>
-
   <div class="page-header">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="entry-header">
-            <h2 class="entry-title ">Events</h2>
-
+            <h2 class="entry-title flex align-items-center cinzel">Gaming Zone</h2>
             <ul class="breadcrumbs flex align-items-center">
               <li><a href="#">Home</a></li>
-              <li>Event Category</li>
+              <li>Schedule</li>
             </ul>
             <!-- .breadcrumbs -->
           </div>
-          <!-- .entry-header -->
+          <!-- entry-header -->
         </div>
-        <!-- .col-12 -->
+        <!-- col-12 -->
       </div>
-      <!-- .row -->
+      <!-- row -->
     </div>
-    <!-- .container -->
+    <!-- container -->
   </div>
-  <!-- .page-header -->
+  <!-- page-header -->
 
-  <section id="gallery">
+  <div class="main-content">
     <div class="container">
+      <div class="entry-header">
+        <div class="entry-title">
+          <p class="cinzel">Explore</p>
+          <h2 class="flex align-items-center cinzel">Event List</h2>
+        </div><!-- entry-title -->
+      </div><!-- entry-header -->
+
       <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card category-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <img src="../images/competetions.png" alt="" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Competitions</h5>
-              <a href="events-competitions.html" class="btn mt-2 mb-2 mt-lg-0 mb-lg-0 register">Show More</a>
+        <div class="col-12" d>
+          <div class="event-tickets flex-row" id="container">
+            <!-- day 1 -->
+          </div><!-- event-tickets -->
+          <div class="event-tickets flex-row" id="container-d2">
+            <!-- day 2 -->
+          </div><!-- event-tickets -->
+        </div><!-- col-12 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- main-content -->
+
+
+  <!-- map
+  <div class="row">
+    <div class="col-12">
+      <div class="tabs">
+        <div class="tabs-container">
+          <div id="tab_details" class="tab-content">
+            <div class="flex flex-wrap justify-content-between">
+              <div class="single-event-details">
+                <div class="single-event-details-row">
+                  <label>Start:</label>
+                  <p>Nov 3 @ 08:00 am</p>
+                </div>
+
+                <div class="single-event-details-row">
+                  <label>End:</label>
+                  <p>Nov 4 @ 08:30 pm</p>
+                </div>
+                <div class="single-event-details-row">
+                  <label>Categories:</label>
+                  <p>Festivals</p>
+                </div>
+
+                <div class="single-event-details-row">
+                  <label>Tags:</label>
+                  <p><a href="#">festivals</a>, <a href="#">music</a>, <a href="#">concert</a></p>
+                </div>
+              </div>
+
+              <div class="single-event-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7852.087597613934!2d74.84287477882916!3d34.12300937093046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e185afae42b685%3A0xdf5ec84b1ac8f98d!2sNational%20Institute%20of%20Technology%20(NIT)%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1697353698665!5m2!1sen!2sin"
+                  width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-          <div class="card category-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <img src="../images/game-zone.png" alt="" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Gaming Zone</h5>
-              <a href="events/game-zone.html" class="btn mt-2 mb-2 mt-lg-0 mb-lg-0 register">Show More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-          <div class="card category-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <img src="../images/others.png" alt="" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Others</h5>
-              <a href="events-others.html" class="btn mt-2 mb-2 mt-lg-0 mb-lg-0 register">Show More</a>
-            </div>
-          </div>
-        </div>
+          </div>.tab-content -->
+  <!--
+        </div> .tabs-container -->
+  </div><!-- .tabs -->
+  </div><!-- .col-12 -->
+  </div><!-- .row -->
 
 
-      </div>
-    </div>
-  </section>
 
-  
   <footer class="site-footer">
     <div class="footer-cover-title flex justify-content-center align-items-center">
       <h2>Rang-e-Chinar</h2>
@@ -213,6 +247,77 @@
     </div><!-- footer-content-wrapper -->
   </footer><!-- site-footer -->
 
+  <script>
+    var eventsd1 = [
+      {
+        event: "Gaming Zone",
+        time: "9:00 am to 5:00 pm, Both Days",
+        venue: "PF",
+        image: "../images/game.jpg",
+        url: "/events/game-zone.html"
+      }
+    ];
+
+
+    // Get the container where you want to render the data
+    var container = document.getElementById('container'); // Replace 'container' with the actual ID of your container element
+
+    // Loop through the data and create HTML elements
+    eventsd1.forEach(event => {
+      const div = document.createElement('div');
+      div.classList.add('col-md-4');
+
+      div.innerHTML = `
+                <div>
+                  <a class="img" href="${event.url}"> 
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <img src="${event.image}">
+                           
+                            <div class="ripple-cont"></div>
+                        </div>
+                        <div class="table">
+                            <div class="card-caption">${event.event}</div>
+                            <h6 class="category text-info">${event.time}</h6>
+                            <p class="card-description">${event.venue}</p>
+                        </div>
+                    </div>
+                  </a>
+                  </div>
+                `;
+
+
+      // Append the created element to the container
+      container.appendChild(div);
+    });
+    container = document.getElementById('container-d2');
+    eventsd2.forEach(event => {
+      const div = document.createElement('div');
+      div.classList.add('col-md-4');
+
+      div.innerHTML = `
+                <div>
+                  <a class="img" href="${event.url}"> 
+                    <div class="card card-blog">
+                        <div class="card-image">
+                            <img src="${event.image}">
+                           
+                            <div class="ripple-cont"></div>
+                        </div>
+                        <div class="table">
+                            <div class="card-caption">${event.event}</div>
+                            <h6 class="category text-info">${event.time}</h6>
+                            <p class="card-description">${event.venue}</p>
+                        </div>
+                    </div>
+                  </a>
+                  </div>
+                `;
+
+      // Append the created element to the container
+      container.appendChild(div);
+    });
+  </script>
   <script type='text/javascript' src='js/jquery.js'></script>
   <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
   <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
@@ -225,20 +330,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script>
-    AOS.init({
-      // Global settings:
-      disable: 'Phone',
-      startEvent: 'DOMContentLoaded',
-
-      duration: 400, // values from 0 to 3000, with step 50ms
-      easing: 'ease-out', // default easing for AOS animations
-      once: true, // whether animation should happen only once - while scrolling down
-      mirror: true, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'center-bottom', // defines which position of the element regarding to window should trigger the animation
-
-    });
-  </script>
 </body>
 
 </html>
