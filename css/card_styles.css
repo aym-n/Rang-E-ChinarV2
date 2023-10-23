@@ -55,7 +55,8 @@ CARDS
 }
 
 .text-info{
-    color: lightsalmon !important;
+    color: black !important;
+    font-weight: 600;
 }
 
 .card img {
@@ -192,11 +193,12 @@ h6, .h6 {
     font-size: 1.3rem;
     font-weight: 600;
     color: #A2834B !important;
-    font-family: 'cinzel-deco';
+    font-family: 'cinzel';
 }
 
 .card-description{
     font-family: 'cinzel';
+    font-weight: 600;
 }
 
 

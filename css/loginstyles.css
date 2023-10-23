@@ -19,3 +19,8 @@ form button{
     align-self: center;
 }
 
+.tabs-container .tab-content p{
+    color: black !important;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
