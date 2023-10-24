@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Rang-E-Chinar Dance Battle</title>
+    <title>Face/Stone Painting</title>
 
     <link rel="stylesheet" href="../css/eventstyles.css">
 
@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="../css/loginstyles.css">
     <style>
         .about-us .page-header {
-            background: url("../images/dance.png") no-repeat !important;
+            background: url("../images/painting.png") no-repeat !important;
             background-size: cover !important;
         }
     </style>
@@ -147,11 +147,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="entry-header">
-                        <h2 class="entry-title">Dance Battle</h2>
+                        <h2 class="entry-title">Face Painting</h2>
 
                         <ul class="breadcrumbs flex align-items-center">
                             <li><a href="#">Home</a></li>
-                            <li>Dance Battle</li>
+                            <li>Face Painting</li>
                         </ul>
                         <!-- .breadcrumbs -->
                     </div>
@@ -199,9 +199,8 @@
                         <div id="tab_venue" class="tab-content">
                             <h1 class="entry-header">Rules/Prizes</h1>
                             <div id="eventRules"></div>
-                            <div id="eventPrizes">
-                                <h1>Prizes</h1>
-                            </div>
+                            <h1 class="mt-5">Prizes</h1>
+                            <div id="eventPrizes"></div>
                         </div>
 
                         <div id="tab_organizers" class="tab-content">
@@ -210,7 +209,7 @@
                         </div>
                     </div>
 
-                    <a href="https://forms.gle/ubfeKrhFxXYJEava7" target="_blank" class="register btn current w-100 my-5 each-event-register">Register</a>
+                    <a href="https://forms.gle/rGwuAFjk2hy5ncMSA" class="register btn current w-100 my-5 each-event-register">Register</a>
                 </div>
             </div>
         </div>
@@ -278,42 +277,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="eventPopulate.js"></script>
     <script>
-        var eventData = {
-  "title": "Dance Battle",
+        var eventData ={
+  "title": "Face Painting",
   "main-content": {
-    "description": "Step onto the electrifying dance floor for an unforgettable Dance Battle extravaganza! From hip-hop to contemporary, compete for a rhythm-fueled showdown that leaves everyone breathless.",
+    "description": "Express your creativity in our Face Painting Competition! Transform faces into living art. Open to all, no experience needed. Paint, participate, and make faces shine! Unlock your potential and get ready for the challenge to compete within your peers. While having a challenging competition, learn and enjoy the beauty of art.",
     "entry_fee": {
-      "NIT Srinagar Students": ["No entry fee"],
-      "Other Institute Students": ["Rs. 100 per team"]
+      "NIT Srinagar Students": ["No fee"],
+      "Other Institute Students": ["Rs.70/-(for face painting only)"]
     },
     "contacts": [
       {
-        "name": "Shivani",
-        "phone": "9369528589"
+        "name": "Vagisha Vag",
+        "phone": "6205821730",
+        "email": "vagisha_2021bciv098@nitsri.ac.in"
+      },
+      {
+        "name": "Vikas Singh",
+        "phone": "7318565386",
+        "email": "vikas_2021bciv08848@nitsri.ac.in"
+      },
+      {
+        "name": "Adarsh Fulzele",
+        "phone": "7093682821",
+        "email": "adarsh_2021bite067@nitsri.ac.in"
       }
     ]
   },
   "tabs": {
     "Rules/Prizes": {
       "rules": {
-        "Time Limit": "The time limit for one face-off will be 8-10 minutes.",
-        "Genre": "Performances can be of any genre.",
-        "Guidelines": "Musicality and how they interact with the music, the creativity of moves, the performance itself.",
-        "Restrictions": "Contestants must be dressed up in a sense which does not reflect any type of obscenities or any other subject matter not suitable for a family audience. Any such act will lead to disqualification of the participant or the Team.",
-        "Rule1": "No props or other costumes are allowed during the face-off battle.",
-        "Video Clip": "A short clip is required at the time of registration for shortlisting purposes.",
-        "Rule3": "Participants must bring their audio in a pendrive at the venue.",
-        "Rule3": "Performance should not include any stunts and/or moves with high-risk and vulgarity."
+        "Students from any School/college can participate.": true,
+        "The Competition is open to all artists who are at least 15 yrs old.": true,
+        "Make a team of two members (one member will be a volunteer whose face will be used for coloring)": true,
+        "Judges Decisions: The judge’s decisions are final and binding.": true,
+        "Participants should not use offensive, lewd, or inappropriate content.": true,
+        "Everyone brings their own art supplies.": true,
+        "Colors shall not be provided.": true,
+        "Time Duration is 90 minutes.": true,
+        "Participants are required to bring their school or college identity cards on the day of the competition.": true,
+        "Anyone violating any rules at any point during the event will be disqualified. No excuses regarding rule violations will be entertained.": true
       },
       "prizes": {
-        "prizes": "Attractive gift hampers & certificates will be given to final top 3 winners. E-certificates will be given to all the participants."
+        "Winners will be announced and awarded on the day of the event.": true,
+        "E- Certificates will be provided to all the winners and participants.": true
       }
-      
     },
     "Judging Criteria": {
-        "criteria": {
-            "criteria": "Judges evaluate the dancers based on criteria like creativity, musicality, execution, skills/accuracy of dance moves, and crowd engagement."
-        }
+      "criteria": {
+        "Structure and Design": "20 points",
+        "Colour Patterns / Detailing and finishing of the portrait sketch": "30 points",
+        "Message/Emotion conveyed": "30 points",
+        "Overall impact": "20 points"
+      }
     }
   }
 }
@@ -322,8 +337,10 @@
 
 
 
-// Call the function to populate the data
-populateEventData();
+
+
+        // Call the function to populate the data
+        populateEventData();
 
 
     </script>
