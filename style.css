@@ -1098,8 +1098,8 @@ a.box-link *{
 }
 
 .page-header .entry-title {
-    font-size: 72px;
-    color: white;
+    font-size: 46px;
+    color: white !important;
     margin: 0;
     padding: 0;
 }
