@@ -51,6 +51,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="let-it-snow.css ">
 
         <!-- styles defined by us -->
         <link rel="stylesheet" href="./defclass.css">
@@ -80,7 +81,7 @@
     </style>
     </head>
 
-    <body>
+    <body class="let-it-snow">
         <header class="site-header">
             <div class="header-bar">
                 <div class="container-fluid">
@@ -234,10 +235,10 @@
                                 href="https://docs.google.com/forms/d/e/1FAIpQLSf6QKphSvO-MSphSafAs7ulIqbpMwGVYfmycmo2XDmIHH6wUg/viewform?usp=sf_link"
                                 target="_blank" class="btn current events-btn"
                                 data-aos="fade-in"
-                                data-aos-duration="1000">Institute Registration</a>
+                                data-aos-duration="1000" collectsnow="">Institute Registration</a>
                             <a href="Login.html" class="btn current"
                                 data-aos="fade-in" data-aos-duration="1000"
-                                data-aos-delay="500">Attendee Registration</a>
+                                data-aos-delay="500" collectsnow="">Attendee Registration</a>
                         </div>
                     </div>
                 </div>
@@ -828,12 +829,15 @@
         <script type='text/javascript' src='js/circle-progress.min.js'></script>
         <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
         <script type='text/javascript' src='js/custom.js'></script>
+        
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script type='text/javascript' src='let-it-snow.min.js'></script>
         <script>
         AOS.init({
             // Global settings:
@@ -847,6 +851,14 @@
             anchorPlacement: 'center-bottom', // defines which position of the element regarding to window should trigger the animation
 
         });
+
+
+        $.letItSnow('.let-it-snow', {
+            stickyFlakes: 'lis-flake--js',
+            makeFlakes: true,
+            sticky: true
+        });
+        
     </script>
     </body>
 
