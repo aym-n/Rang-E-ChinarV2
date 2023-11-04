@@ -378,27 +378,4 @@
 
   </script>
   </body>
-
-          fetch(
-            "https://script.google.com/macros/s/AKfycbzIzMveKM3Jz9yxW1USM5Vs8OJmKQR8FtnYw-haZLJyvPc9q4K6WF23WlVXgf0NWcuTQw/exec",
-            {
-              method: "POST",
-              body: formData,
-            }
-          )
-            .then((response) => response.text())
-            .then((data) => {
-              console.log(data);
-              message.innerHTML = "Form Submitted Successfully.";
-              message.style.color = "green";
-              document.getElementById("myForm").reset();
-            })
-            .catch((error) => {
-              console.error("Error:", error);
-              message.innerHTML = "Error";
-              message.style.color = "red";
-            });
-        });
-    </script>
-  </body>
 </html>
