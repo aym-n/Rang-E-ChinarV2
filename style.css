@@ -296,7 +296,6 @@ margin-bottom: 20px;
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-    padding: 220px 0;
     background: url("images/hero.png") no-repeat;
     background-size: cover;
     background-position: center;
@@ -405,7 +404,6 @@ margin-bottom: 20px;
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4350px;
     width: 100%;
     padding-bottom: 120px;
     background: url("images/1.png");
@@ -722,7 +720,7 @@ margin-bottom: 20px;
 # homepage-next-events
 ------------------------------------------------------------*/
 .homepage-next-events {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .homepage-next-events .entry-title p {
